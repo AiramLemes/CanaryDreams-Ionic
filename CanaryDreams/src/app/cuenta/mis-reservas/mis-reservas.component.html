@@ -1,0 +1,48 @@
+<body class = MJ>
+
+  <app-menu></app-menu>
+  
+  <!--Imagen 1-->
+
+  <img class = Imagen1MJ src = "assets/misAlojamientos.png" alt = "">
+
+  <!--Titulo 1-->
+  <p class = Titulo1MJ>Mis Alojamientos</p>
+
+
+
+  <!--Apartamentos-->
+  <section class= ApartamentosMJ>
+      
+      <div class= CuadroApartAB *ngFor="let alojamiento of misReservas">
+          <div class= CuadroApartMJ>
+
+              <img class= FotoCuadroApartMJ src="{{alojamiento.imagenes.imagen}}" alt="">
+              
+              <div class = recuadroDatosMJ>
+
+                  <p class= NombreApartMJ> {{alojamiento.informacionGeneral.titulo}} </p>
+
+                  <p class= DirApartMJ> {{alojamiento.direccion.ciudad}} </p>
+
+                  <div class= derechaPrecioMJ>
+
+                      <p class= PrecioApartMJ> {{alojamiento.alquiler.precio}} €</p>
+
+                  </div>
+
+              </div>
+              <div class = botones>
+                  <input class = boton1MJ type = button value = Retirar (click)="eliminar(alojamiento.id)">
+
+                  <input class = boton2MJ type = button value = Gestionar>
+              </div>
+          
+          </div>
+      </div>
+
+  </section>
+  
+</body>
+
+

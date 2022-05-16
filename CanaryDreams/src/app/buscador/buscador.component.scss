@@ -1,0 +1,578 @@
+body.AB{
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-size: x-large;
+    text-align: center;
+    color: #000000; 
+
+    margin: 0 auto;
+
+    padding-top: 60px; 
+    padding-bottom: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.boton{
+    float: right;
+    width: 80px;
+    height:40px;
+    margin-left: 40px;
+    margin-top: 12px;
+    border-radius:7px;
+    background-color: rgba(144, 255, 122, 0.467);
+}
+
+section.BuscadorAB {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ".";
+    width: 680.8px;
+    margin: 0 auto;
+
+}
+
+.TextoBuscadorAB{
+    font-size:22px;
+    width: 480.8px;
+    height: 65.62px;
+    margin:auto;
+    line-height:65px;
+    background: #F4E4E4;
+    border-radius: 14px;
+    float: left;
+
+
+}
+
+/*------------------Apartamentos----------------------*/
+
+
+section.ApartamentosAB {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." "." "." "."; 
+    width: 860px;
+    height:1060px;
+
+}
+
+.ApartamentosAB{
+    width: 960px;
+    height: 1256.72px;
+
+    margin: 0 auto;
+}
+
+
+
+.CuadroApartAB {
+    width: 208.82px;
+    height: 207px;
+    
+    margin: auto;
+    margin-top: 40px;
+
+    border:  2.731px solid #787878;
+    box-sizing: border-box;
+    border-radius: 9.9718px;
+
+    color: #685D5D;
+}
+
+.FotoCuadroApartAB {
+    width: 204.82px;
+    height: 130px;
+    border-radius: 8.2px 8.2px 0px 0px;
+    margin: auto;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.recuadroDatosAB{
+    width: 200.454px;
+    height: 65.568px;
+    margin-left: -1px;
+    
+}
+
+.FondoValApartAB{
+    float: right;
+    width: 24.15px;
+    height: 17.67px;
+    margin-top: 5px;
+    margin-right: 5px;
+
+    background: #2A2867;
+    
+
+}
+
+.ValApartAB {
+    font-size:15px;
+    color: #ffffff;
+    margin:auto;
+    
+
+}
+
+.NombreApartAB{
+    float: left;
+    font-size:15px;
+    margin-top: 6px;
+    margin-left: 1.5px;
+    
+}
+
+.DirApartAB{
+    float: left;
+    font-size:11px;
+    font-weight: normal;
+    margin-top: -1.5px;
+    margin-left: 1.5px;
+
+}
+
+.DesdeApartAB{
+    float:right;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    margin-top: -0px;
+    margin-right: 8px;
+    color: #685D5D;
+}
+
+.PrecioApartAB{
+    float:right;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    margin-right: 8px;
+    margin-top: -8px;
+    
+    color: #2D2B2B;
+}
+
+.PrecioApartAB{
+    float:right;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    margin-right: 8px;
+    margin-top: 1px;
+    
+    color: #2D2B2B;
+}
+
+
+
+/* 640 to 960 pixels */
+@media screen and (max-width: 60em) {
+    
+
+    body.AB{
+
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-size: 16;
+        text-align: center;
+        color: #000000; 
+    
+        margin: 0 auto;
+    
+        padding-top: 50px; 
+        padding-bottom: 100px;
+        overflow: hidden;
+    }
+
+    .TextoBuscadorAB{
+        font-size:17px;
+        width: 350.8px;
+        height: 45.62px;
+        margin:auto;
+        line-height:45px;
+        background: #F4E4E4;
+        border-radius: 14px;
+        float: left;
+    
+    
+    }
+
+    .boton{
+        float: right;
+        width: 60px;
+        height:30px;
+        margin-left: 30px;
+        margin-top: 7px;
+        border-radius:7px;
+        background-color: rgba(144, 255, 122, 0.467);
+    }
+    
+    
+    section.BuscadorAB {
+        width: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        ".";
+        margin: 0 auto;
+
+    
+    }
+    
+    .BuscadorAB{
+    
+        width: 500px;
+        height: 65px;
+        margin:auto;
+        border-radius: 14px;
+        margin-bottom: 30px;
+    
+    }
+    
+    /*------------------Apartamentos----------------------*/
+    
+    
+    section.ApartamentosAB {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "." "." "." "." "." "."; 
+        width: 600px;
+        height: 1500px;
+    
+    }
+    
+    .ApartamentosAB{
+        width: 800px;
+        height: 1540px;
+    
+        margin: 0 auto;
+    }
+    
+    
+    
+    .CuadroApartAB {
+        width: 260px;
+        height: 190px;
+        
+        margin: auto;
+        margin-top: 40px;
+    
+        border:  2.731px solid #787878;
+        box-sizing: border-box;
+        border-radius: 9.9718px;
+    
+        color: #685D5D;
+    }
+    
+    .FotoCuadroApartAB {
+        width: 256px;
+        height: 130px;
+        border-radius: 8.2px 8.2px 0px 0px;
+        margin: auto;
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+    
+    .recuadroDatosAB{
+        width: 256px;
+        height: 65.568px;
+        margin-left: -1px;
+        
+    }
+    
+    .FondoValApartAB{
+        float: right;
+        width: 20px;
+        height: 16px;
+        margin-top: 5px;
+        margin-right: 5px;
+    
+        background: #2A2867;
+        
+    
+    }
+    
+    .ValApartAB {
+        font-size:12px;
+        color: #ffffff;
+        margin:auto;
+        
+    
+    }
+    
+    .NombreApartAB{
+        float: left;
+        font-size:16px;
+        margin-top: 2;
+        
+    }
+    
+    .DirApartAB{
+        float: left;
+        font-size:16px;
+        margin-top: -8px;
+        font-weight: normal;    
+    }
+    
+    .DesdeApartAB{
+        float:right;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        margin-top: -5px;
+        margin-right: 5px;
+        color: #685D5D;
+    }
+    
+    .PrecioApartAB{
+        float:right;
+        font-family: Times New Roman;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        margin-right: 8px;
+        margin-top: -8px;
+        
+        color: #2D2B2B;
+    }
+    
+    .PrecioApartAB{
+        float:right;
+        font-family: Times New Roman;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        margin-right: 8px;
+        margin-top: -8px;
+        
+        color: #2D2B2B;
+    }
+    
+    .pasarPaginaAB {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "."; 
+    
+        width: 80px;
+        margin: 0 auto;
+    
+    }
+
+/* under 690 px */
+@media screen and (max-width: 40em) {
+    
+    body.AB{
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-size: 10;
+    text-align: center;
+    color: #000000; 
+
+    margin: 0 auto;
+
+    padding-top: 20px; 
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+
+section.BuscadorAB {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ".";
+    width: 300px;
+
+}
+
+.TextoBuscadorAB{
+    font-size:10px;
+    width: 200.8px;
+    height: 35.62px;
+    margin:auto;
+    line-height:35px;
+    background: #F4E4E4;
+    border-radius: 14px;
+    float: left;
+
+
+}
+
+.boton{
+    float: right;
+    width: 50px;
+    height:25px;
+    margin-left: 20px;
+    margin-top: 7px;
+    border-radius:7px;
+    font-size:12px;
+    background-color: rgba(144, 255, 122, 0.467);
+}
+
+.BuscadorAB{
+
+    width: 260px;
+    height: 60px;
+    margin:auto;
+    border-radius: 14px;
+    margin-bottom: 30px;
+
+}
+
+/*------------------Apartamentos----------------------*/
+
+
+section.ApartamentosAB {
+
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "." "." "." "." "." "." "." "." "." "." "." "."; 
+    width: 300px;
+    height: 2900px;
+
+}
+
+.ApartamentosAB{
+    width: 640px;
+    height: 1800px;
+
+    margin: 0 auto;
+}
+
+
+
+.CuadroApartAB {
+    width: 260px;
+    height: 190px;
+    
+    margin: auto;
+    margin-top: 40px;
+
+    border:  2.731px solid #787878;
+    box-sizing: border-box;
+    border-radius: 9.9718px;
+
+    color: #685D5D;
+}
+
+.FotoCuadroApartAB {
+    width: 256px;
+    height: 130px;
+    border-radius: 8.2px 8.2px 0px 0px;
+    margin: auto;
+    margin-top: -1px;
+}
+
+.recuadroDatosAB{
+    width: 256px;
+    height: 65.568px;
+    margin-left: -1px;
+    
+}
+
+.FondoValApartAB{
+    float: right;
+    width: 20px;
+    height: 16px;
+    margin-top: 5px;
+    margin-right: 5px;
+
+    background: #2A2867;
+    
+
+}
+
+.ValApartAB {
+    font-size:12px;
+    color: #ffffff;
+    margin:auto;
+    
+
+}
+
+.NombreApartAB{
+    float: left;
+    font-size:16px;
+    margin-top: 2;
+    
+}
+
+.DirApartAB{
+    float: left;
+    font-size:16px;
+    margin-top: -8px;
+    font-weight: normal;    
+}
+
+.DesdeApartAB{
+    float:right;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    margin-top: -5px;
+    margin-right: 5px;
+    color: #685D5D;
+}
+
+.PrecioApartAB{
+    float:right;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-right: 8px;
+    margin-top: -8px;
+    
+    color: #2D2B2B;
+}
+
+.PrecioApartAB{
+    float:right;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-right: 8px;
+    margin-top: -8px;
+    
+    color: #2D2B2B;
+}
+}
+
+.buscador640{
+    width: 100px;
+    height: 15px;
+}
+
+.pasarPaginaAB {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr;
+    grid-template-areas: "."; 
+
+    width: 80px;
+    margin: 0 auto;
+
+}}

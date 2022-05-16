@@ -1,0 +1,96 @@
+.nav {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: nav;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-left: -32px;
+}
+
+
+
+
+a {
+    border: black 1px solid;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+    width: 280px;
+    float: left;
+    margin-left:40px;
+    font-size:16px;
+}
+
+@media screen and (max-width: 60em) {
+  .nav {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: nav;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-left: -32px;
+}
+
+
+
+
+a {
+    border: black 1px solid;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    height: 30px;
+    font-size:12px;
+    line-height: 30px;
+    width: 180px;
+    float: left;
+    margin-left:40px;
+}
+}
+
+@media screen and (max-width: 40em) {
+  .nav {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: nav;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    margin-left: -32px;
+}
+
+
+
+
+a {
+    border: black 1px solid;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    height: 30px;
+    font-size:7px;
+    line-height: 30px;
+    width: 120px;
+    float: left;
+    margin-left:40px;
+}
+}

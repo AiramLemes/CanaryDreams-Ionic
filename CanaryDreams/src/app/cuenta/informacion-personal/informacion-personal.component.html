@@ -1,0 +1,58 @@
+<div class="container">
+            
+  <app-menu></app-menu>
+
+  <section class="data">
+      
+      <img class = "imagen" src="/assets/settings.png" alt="d">
+
+      <form [formGroup]="personalData" class="personalData">
+
+              <div class="campos">
+                  <label for="">Nombre</label>
+                  <input type="text" class="camposRegistrarse" required formControlName = "nombre">
+              </div>
+
+              <div class="campos">
+                  <label for="">Apellidos</label>
+                  <input type="text" class="camposRegistrarse" required formControlName = "apellidos">
+              </div>
+
+
+              <div class="campos">
+                  <label for="">DNI</label>
+                  <input type="text" class="camposRegistrarse" formControlName = "dni" readonly>
+              </div>
+              
+              <div class="campos">
+                  <label for="">Teléfono</label>
+                  <input type="text" class="camposRegistrarse" required formControlName = "telefono">
+              </div>
+
+              <div class="campos">
+                  <label for="">Fecha de Nacimiento</label>
+                  <label for=""></label>
+                  <input type="text" class="camposRegistrarse" formControlName = "fecha" readonly>
+              </div>
+
+              <div class="campos">
+                  <label for="">Sexo</label>
+                  <input type="text" class="camposRegistrarse" formControlName = "sexo" readonly>
+              </div>
+
+              <div class="correo">
+                  <label for="">Correo</label>
+                  <input type="text" class="camposRegistrarse" formControlName = "correo" readonly>
+              </div>
+
+          
+
+      </form>
+
+      <input type="button" class="boton" (click)="aplicarCambios()" value="APLICAR CAMBIOS">
+
+
+  </section>
+  
+
+</div>

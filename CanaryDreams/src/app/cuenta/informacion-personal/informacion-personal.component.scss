@@ -1,0 +1,304 @@
+.container {  
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "nav data";
+    margin-top: 65px;
+    margin: auto;
+    width: 1000px;
+    margin-top: -50px;
+    overflow: hidden;
+    
+}
+  
+
+
+  
+.data {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "imagen"
+      "personalData";
+    grid-area: data;
+}
+  
+.imagen { 
+    grid-area: imagen; 
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 220px;
+}
+
+
+.campos {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.correo{
+    margin: auto;
+    margin-bottom: 10px;
+    grid-area: correo;
+}
+
+input {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+
+label {
+    margin: auto;
+    margin-right: 50px;
+}
+
+
+.personalData {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      "correo . .";
+    grid-area: personalData;
+    margin: 0 auto;
+    width: 900px;
+    margin-top: 20px;
+    margin-left: -265px;
+}
+
+.boton {
+
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #69C3FE;
+    cursor: pointer;
+    margin-left: 49px;
+    margin-top: -120px;
+
+}
+
+@media screen and (max-width: 60em) {
+    .container {  
+        display: grid;
+        grid-template-columns: 0.6fr 1.4fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "nav data";
+        margin-top: 65px;
+        margin: auto;
+        width: 600px;
+        margin-top: -50px;
+        overflow: hidden;
+        
+    }
+      
+    
+    
+      
+    .data {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "imagen"
+          "personalData";
+        grid-area: data;
+    }
+      
+    .imagen { 
+        grid-area: imagen; 
+        margin: auto;
+        width: 150px;
+        height: 150px;
+        margin-top: 50px;
+        margin-left: 80px;
+        margin-top: 30px;
+    }
+    
+    
+    .campos {
+        margin: auto;
+        margin-bottom: 10px;
+        width: 180px;
+    }
+    
+    .correo{
+        margin: auto;
+        margin-bottom: 10px;
+        grid-area: correo;
+        width: 180px;
+    }
+    
+    input {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+    
+    
+    label {
+        margin: auto;
+        margin-right: 50px;
+    }
+    
+    
+    .personalData {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". ."
+          ". ."
+          ". ."
+          "correo .";
+        grid-area: personalData;
+        margin: 0 auto;
+        width: 600px;
+        margin-top: -80px;
+        margin-left: -265px;
+        font-size: 14px;
+    }
+    
+    .boton {
+    
+        width: 120px;
+        height: 30px;
+        margin: auto;
+        border-radius: 15px;
+        background-color: #69C3FE;
+        cursor: pointer;
+        margin-left: -37px;
+        margin-top: -120px;
+        font-size:10px;
+    
+    }
+}
+  
+@media screen and (max-width: 40em) {
+    .container {  
+        display: grid;
+        grid-template-columns: 0.6fr 1.4fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "nav data";
+        margin-top: 65px;
+        margin: auto;
+        width: 300px;
+        margin-top: -50px;
+        overflow: hidden;
+        
+    }
+      
+    
+    
+      
+    .data {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "imagen"
+          "personalData";
+        grid-area: data;
+    }
+      
+    .imagen { 
+        grid-area: imagen; 
+        margin: auto;
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+        margin-left: 4px;
+        margin-top: 30px;
+    }
+    
+    
+    .campos {
+        margin: auto;
+        margin-bottom: 10px;
+        width: 180px;
+    }
+    
+    .correo{
+        margin: auto;
+        margin-bottom: 10px;
+        grid-area: correo;
+        width: 180px;
+    }
+    
+    input {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+    
+    
+    label {
+        margin: auto;
+        margin-right: 50px;
+    }
+    
+    
+    .personalData {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "."
+          "."
+          "."
+          "."
+          "."
+          "."
+          "correo";
+        grid-area: personalData;
+        margin: 0 auto;
+        width: 600px;
+        margin-top: -130px;
+        margin-left: -315px;
+        font-size: 14px;
+    }
+    
+    .boton {
+    
+        width: 120px;
+        height: 30px;
+        margin: auto;
+        border-radius: 15px;
+        background-color: #69C3FE;
+        cursor: pointer;
+        margin-left: -87px;
+        margin-top: 20px;
+        font-size:10px;
+        margin-bottom: 20px;
+    
+    }
+}

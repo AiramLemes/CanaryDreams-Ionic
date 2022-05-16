@@ -1,0 +1,93 @@
+<body>
+   
+  <div class="container">
+
+      
+      <section class="titulo_fotos">
+
+          <h1 id = titulo>{{alojamiento.informacionGeneral.titulo}}</h1>    
+
+          <div class = fotos>
+
+              <div class="f1">
+                  <img class= "fotoGrande" src="{{alojamiento.imagenes.imagen}}">
+              </div>
+
+              <div class="f2">
+                  <img class= "fotoPequeña" src="{{alojamiento.imagenes.imagen2}}">
+                  <img class= "fotoPequeña" src="{{alojamiento.imagenes.imagen3}}">
+                  <img class= "fotoPequeña" src="{{alojamiento.imagenes.imagen4}}">
+                  <img class= "fotoPequeña" src="{{alojamiento.imagenes.imagen5}}">
+              </div>
+
+          </div>
+
+      </section>
+
+
+      <section class="datos">
+
+
+          <div>
+              <p class="direc_text_titulo">TIPO: {{alojamiento.tipo}}<br><br></p>
+              <p id="resumen">{{alojamiento.espacios.huespedes}} huésped/es · {{alojamiento.espacios.dormitorios}} 
+                  dormitorio/s · {{alojamiento.espacios.camas}} cama/s · {{alojamiento.espacios.bathroom}} baño/s</p>
+              <p class="direc_text_titulo">El espacio</p>
+              <p class="direc_text_cont">{{alojamiento.informacionGeneral.descripcion}}</p>
+              <p class="direc_text_titulo">Otros aspectos destacables</p>
+              <p class="direc_text_cont">Para unas vacaciones 100% memorables, asegúrate de conectar tu Body & 
+                  Soul con experiencias activas como yoga, kitesurf, surf, paseos en barco o disfrutando de una 
+                  gastronomía local.</p>
+          </div>
+
+          <div class="d2">
+
+              <form id = reserva class="cuadroReserva">    
+                  <div>
+                      <p style="text-align: center;">Añade las fechas para ver los precios</p>
+                  </div>
+  
+                  <div class="cuadroInterior">
+
+                      <div class="llegada">
+                          <h3 class="cuadro_fechas_input_y_texto" for="seleccionarReserva" style="text-align: center; 
+                                      font-size: 18px;">Llegada</h3>
+                          
+                          <input class="cuadro_fechas_input_y_texto" type="date" id="fecha" name="fechaReserva"
+                                  value="2022-03-03"
+                                  min="2022-03-03" max="2024-12-31" >
+  
+                      </div>
+
+                      <div class="salida">
+                          <h3 class="cuadro_fechas_input_y_texto" for="seleccionarReserva" style="text-align: center; 
+                                      font-size: 18px;">Salida</h3>
+  
+                          <input class="cuadro_fechas_input_y_texto" type="date" id="fecha" value="2022-03-03" min="2022-03-03" max="2022-12-31">
+  
+                      </div>
+
+                      
+                      <p id="huespedes">Huéspedes</p>
+                  
+                  </div>
+  
+                  <div id="boton">
+                      <input id = "selec_reserva" type="submit" value = "Hacer Reserva">
+                  </div>
+              </form>
+
+          </div>
+
+           
+      </section>
+
+      <section class="mapa">
+          <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1794843.1911655567!2d-16.395537172607437!3d28.52309025449894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1646340598865!5m2!1ses!2ses">
+
+          </iframe>
+      </section>
+
+  </div>
+
+</body>

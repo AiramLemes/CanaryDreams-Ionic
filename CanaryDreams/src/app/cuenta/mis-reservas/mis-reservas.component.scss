@@ -1,0 +1,379 @@
+
+body.MJ{
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-size: x-large;
+    text-align: center;
+    color: #000000; 
+
+    margin: 0 auto;
+
+    padding-top: 95px; 
+    padding-bottom: 100px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 65px;
+    margin: auto;
+    width: 945px;
+    margin-top: -145px;
+    overflow: hidden;
+}
+
+
+.Imagen1MJ{
+    width: 300px;
+    height: 200px;
+    margin-left: 230px;
+    margin-top: -180px;
+}
+
+.Titulo1MJ{
+    font-size:30px;
+    margin-left: -640px;
+    margin-top: 40px;
+}
+
+
+section.ApartamentosMJ {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "." "."; 
+
+    width: 900px;
+    margin: auto;
+}
+
+.ApartamentosMJ{
+    width: 900px;
+    height: 800.72px;
+
+    margin: 0 auto;
+}
+
+
+.CuadroApartMJ {
+    width: 230.82px;
+    height: 200px;
+    
+    margin: auto;
+    margin-top: 40px;
+
+    border:  2.731px solid #787878;
+    box-sizing: border-box;
+    border-radius: 9.9718px;
+
+    color: #685D5D;
+}
+
+.FotoCuadroApartMJ {
+    width: 226.82px;
+    height: 135px;
+    border-radius: 8.2px 8.2px 0px 0px;
+    margin: auto;
+    margin-top: -1px;
+}
+
+.recuadroDatosMJ{
+    width: 367.454pxpx;
+    height: 65.568px;
+    margin-left: -1px;
+    
+}
+
+.FondoValApartMJ{
+    float: right;
+    width: 24.15px;
+    height: 17.67px;
+    margin-top: 5px;
+    margin-right: 5px;
+
+    background: #2A2867;
+    
+
+}
+
+.ValApartMJ {
+    font-size:14px;
+    color: #ffffff;
+    margin:auto;
+    
+
+}
+
+.NombreApartMJ{
+    float: left;
+    font-size:12px;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+
+.DirApartMJ{
+    float: left;
+    font-size:12px;
+    font-weight: normal;
+    margin-top: 25px;
+    margin-left: -65px;
+
+}
+
+.DesdeApartMJ{
+    float:right;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-right: 8px;
+    color: #685D5D;
+}
+
+.PrecioApartMJ{
+    float:right;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size:15px;
+    margin-right: 8px;
+    margin-top: 30px;
+    
+    color: #2D2B2B;
+}
+
+
+
+.boton1MJ{
+    width: 80px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    margin-right: 60px;
+
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+
+    margin-top: 15px;
+    cursor: default;
+}
+
+.boton2MJ{
+
+    width: 80px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    margin-left: 0px;
+
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+
+    margin-top: 15px;
+    cursor: default;
+}
+
+
+/* 640 to 960 pixels */
+@media screen and (max-width: 60em) {
+    
+
+    body.MJ{
+
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-size: x-large;
+        text-align: center;
+        color: #000000; 
+    
+        margin: 0 auto;
+    
+        margin-top: -145px; 
+        padding-bottom: 70px;
+        width: 600px;
+        overflow: hidden;
+    }
+    
+    .Imagen1MJ{
+        width: 200px;
+        height: 150px;
+        margin-left: 250px;
+        margin-top: -120px;
+    }
+    
+    .Titulo1MJ{
+        font-size:20px;
+        margin-left: -430px;
+        margin-top: 20px;
+    }
+    
+    
+    section.ApartamentosMJ {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "." "."; 
+    
+        width: 80%;
+        margin: auto;
+    }
+    
+    .ApartamentosMJ{
+        width: 960px;
+        height: 900.72px;
+    
+        margin: 0 auto;
+    }
+    
+    
+    
+    .botones{
+        width: 230px;
+    }    
+    
+    .boton1MJ{
+        float: left;
+        width: 80px;
+        height: 20px;
+        background: rgba(0, 0, 0, 0.37);
+        border-radius: 10px;
+        margin-left: 0px;
+    
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 14px;
+        line-height: 15px;
+        text-align: center;
+    
+        margin-top: 15px;
+        cursor: default;
+    }
+    
+    .boton2MJ{
+        float: right;
+        width: 80px;
+        height: 20px;
+        background: rgba(0, 0, 0, 0.37);
+        border-radius: 10px;
+        margin-left: 0px;
+    
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 14px;
+        line-height: 15px;
+        text-align: center;
+    
+        margin-top: 15px;
+        cursor: default;
+    }
+}
+
+/* 640 pixels */
+@media screen and (max-width: 40em) {
+    
+
+    body.MJ{
+
+        font-family: Roboto Condensed;
+        font-style: normal;
+        font-size: x-large;
+        color: #000000; 
+    
+        margin: 0 auto;
+    
+        margin-top: -145px; 
+        padding-bottom: 40px;
+        width: 320px;
+        overflow: hidden;
+    }
+
+    .botones{
+        width: 220px;
+    }
+
+    
+    .Imagen1MJ{
+        width: 180px;
+        height: 100px;
+        margin-left: -30px;
+        margin-top: 10px;
+    }
+    
+    .Titulo1MJ{
+        font-size:15px;
+        margin-left: -190px;
+        margin-top: 30px;
+    }
+    
+    section.ApartamentosMJ {
+    
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "." "."; 
+    
+        width: 80%;
+        margin: auto;
+    }
+    
+    .ApartamentosMJ{
+        width: 640px;
+        height: 1900px;
+    
+        margin: 0 auto;
+    }
+    
+    
+    
+    .boton1MJ{
+        float: left;
+        width: 80px;
+        height: 20px;
+        background: rgba(0, 0, 0, 0.37);
+        border-radius: 10px;
+        margin-left: -0px;
+    
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 14px;
+        line-height: 15px;
+        text-align: center;
+    
+        margin-top: 15px;
+        cursor: default;
+    }
+    
+    .boton2MJ{
+        float: right;
+        width: 80px;
+        height: 20px;
+        background: rgba(0, 0, 0, 0.37);
+        border-radius: 10px;
+        margin-right: -0px;
+    
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 14px;
+        line-height: 15px;
+        text-align: center;
+    
+        margin-top: 18px;
+        cursor: default;
+    }
+}

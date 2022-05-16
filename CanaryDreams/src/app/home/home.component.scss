@@ -1,0 +1,789 @@
+body {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}   
+
+
+h1 {
+
+    font-family: 'Rokkitt';
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 45px;
+    line-height: 23px;
+    text-align: center;
+
+
+    color: #FFFFFF;
+
+
+}
+
+
+
+section.buscador {
+
+    grid-area: "buscador"; 
+    grid-auto-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    height: 380px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/canary-dreams-db.appspot.com/o/home%2FHome.webp?alt=media&token=c3d07671-67d2-41fb-a4be-7fb59f1a20d5');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 760px;
+    border: 1px solid black;
+}
+
+#buscador_home {
+
+    width: 172px;
+    height: 55px;
+    margin-left: 290px;
+    margin-top: 60px;
+
+    background: #FFFFFF;
+    border-radius: 9px;
+    font-size: 17px;
+}
+
+
+section.islas {
+    width: 870px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows:  1fr 1fr; 
+    grid-template-areas: 
+    ". . . ."
+    ". . . ."; 
+    gap: 0px 0px; 
+    height: 300px;
+    margin: 0 auto;
+    margin-top: -50px;
+    
+}
+
+.titulo1 { 
+    margin: auto;
+    width: 700px;
+    margin-top: 70px;
+}
+
+
+
+
+p {
+    font-family: 'Rokkitt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 23px;
+    text-align: center;
+    color: black;
+}
+
+
+
+h3 {
+    position: relative;
+    width: 100px;
+    height: 33px;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.7);
+    top: -80px;
+    left: 20px;
+}
+
+
+.cuadroIsla {
+
+    width: 100px;
+    height: 200px;
+    margin-top: 80px;
+    margin-left: 20px;
+
+}
+
+.fotoIsla {
+    width: 200px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.cuadro_texto_isla {
+
+    width: 100px;
+    height: 33px;
+    margin-top: -20px;
+    margin-left: 10px;
+    background-color: rgba(255, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+
+section.apartamentos {
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+    "titulo2 titulo2 titulo2"
+    ". . ."
+    ". . ."; 
+    gap: 0px 0px; 
+    height: 500px;
+    margin: auto;
+    margin-top: 80px;
+    width: 900px;
+}
+
+.titulo2 { 
+    grid-area: titulo2; 
+    margin: auto;
+    margin-top: 320px;
+}
+
+
+
+
+.ApartamentosAB{
+    width: 800px;
+    height: 1256.72px;
+    margin: 0 auto;
+}
+
+
+
+.CuadroApartAB {
+    width: 248.82px;
+    height: 207px;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1.4fr 0.6fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "."
+        "datos"; 
+    margin: 0 auto;
+    margin-top: 10px;    
+    border:  2.731px solid #787878;
+    box-sizing: border-box;
+    border-radius: 9.9718px;
+
+    color: #685D5D;
+}
+
+.FotoCuadroApartAB {
+    width: 246.088px;
+    height: 140px;
+    border-radius: 8.2px 8.2px 0px 0px;
+    margin: auto;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.recuadroDatosAB{
+    width: 267.454px;
+    height: 25.568px;
+}
+
+.FondoValApartAB{
+    float: right;
+    width: 30.15px;
+    height: 20.67px;
+    margin-top: 5px;
+    margin-right: 30px;
+
+    background: #2A2867;
+    
+
+}
+
+.ValApartAB {
+    font-size:15px;
+    color: #ffffff;
+    margin:auto;
+    
+
+}
+
+.NombreApartAB{
+    float: left;
+    font-size:18px;
+    margin-top: 5px;
+    width: 200px;
+    height: 10px;
+    text-align:left;
+    
+}
+
+.DirApartAB{
+    float: left;
+    font-size:15px;
+    font-weight: normal;
+    margin-top: -14.5px;
+    margin: auto;
+    width: 160px;
+    text-align:left;
+
+}
+
+.PrecioApartAB{
+    float:right;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    margin-right: 30px;
+    margin-top: -0px;
+    text-align: left;
+    
+    color: #2D2B2B;
+}
+
+
+a {
+    text-decoration: none;
+    margin: auto;
+    color: black;
+}
+
+@media screen and (max-width: 60em) {
+    body {
+        width: 600px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        overflow: hidden;
+    }   
+    
+    
+    h1 {
+    
+        font-family: 'Rokkitt';
+        font-style: normal;
+        font-weight: 600px;
+        font-size: 35px;
+        line-height: 23px;
+        text-align: center;
+    
+    
+        color: #FFFFFF;
+    
+    
+    }
+    
+    
+    
+    section.buscador {
+    
+        grid-area: "buscador"; 
+        grid-auto-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        height: 280px;
+        background-image: url('https://firebasestorage.googleapis.com/v0/b/canary-dreams-db.appspot.com/o/home%2FHome.webp?alt=media&token=c3d07671-67d2-41fb-a4be-7fb59f1a20d5');
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        width: 540px;
+        border: 1px solid black;
+    }
+    
+    #buscador_home {
+    
+        width: 142px;
+        height: 45px;
+        margin-left: 200px;
+        margin-top: 60px;
+        font-size:16px;
+    
+        background: #FFFFFF;
+        border-radius: 9px;
+    }
+    
+    
+    section.islas {
+        width: 450px;
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows:  1fr 1fr 1fr; 
+        grid-template-areas: 
+        ". ."
+        ". ."
+        ". ."; 
+        gap: 0px 0px; 
+        height: 770px;
+        margin: 0 auto;
+        margin-top: -50px;
+        
+    }
+    
+    .titulo1 { 
+        margin: auto;
+        width: 600px;
+        margin-top: 50px;
+    }
+    
+    
+    
+    
+    p {
+        font-family: 'Rokkitt';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 23px;
+        text-align: center;
+        color: black;
+    }
+    
+    
+    
+    h3 {
+        position: relative;
+        width: 100px;
+        height: 33px;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 30px;
+        border-radius: 5px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: rgba(255, 255, 255, 0.7);
+        top: -80px;
+        left: 20px;
+    }
+    
+    
+    .cuadroIsla {
+    
+        width: 100px;
+        height: 200px;
+        margin-top: 70px;
+        margin-left: 20px;
+    
+    }
+    
+    .fotoIsla {
+        width: 200px;
+        height: 160px;
+        border-radius: 10px;
+    }
+    
+    .cuadro_texto_isla {
+    
+        width: 100px;
+        height: 33px;
+        margin-top: -20px;
+        margin-left: 10px;
+        background-color: rgba(255, 0, 0, 0.7);
+        border-radius: 5px;
+    }
+    
+    
+    section.apartamentos {
+    
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: 
+        ". ."
+        ". ."
+        ". ."; 
+        gap: 0px 0px; 
+        height: 800px;
+        margin: auto;
+        margin-top: 80px;
+        width: 600px;
+    }
+    
+    .titulo2 { 
+        grid-area: titulo2; 
+        margin: auto;
+        margin-top: 320px;
+        width: 630px;
+    }
+    
+    
+    
+    
+    .ApartamentosAB{
+        width: 600px;
+        height: 1256.72px;
+        margin: 0 auto;
+    }
+    
+    
+    
+    .CuadroApartAB {
+        width: 248.82px;
+        height: 207px;
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1.4fr 0.6fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "."
+            "datos"; 
+        margin: 0 auto;
+        margin-top: 10px;    
+        border:  2.731px solid #787878;
+        box-sizing: border-box;
+        border-radius: 9.9718px;
+    
+        color: #685D5D;
+    }
+    
+    .FotoCuadroApartAB {
+        width: 246.088px;
+        height: 140px;
+        border-radius: 8.2px 8.2px 0px 0px;
+        margin: auto;
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+    
+    .recuadroDatosAB{
+        width: 267.454px;
+        height: 25.568px;
+    }
+    
+    .FondoValApartAB{
+        float: right;
+        width: 30.15px;
+        height: 20.67px;
+        margin-top: 5px;
+        margin-right: 30px;
+    
+        background: #2A2867;
+        
+    
+    }
+    
+    .ValApartAB {
+        font-size:15px;
+        color: #ffffff;
+        margin:auto;
+        
+    
+    }
+    
+    .NombreApartAB{
+        float: left;
+        font-size:18px;
+        margin-top: 5px;
+        width: 200px;
+        height: 10px;
+        text-align:left;
+        
+    }
+    
+    .DirApartAB{
+        float: left;
+        font-size:15px;
+        font-weight: normal;
+        margin-top: -14.5px;
+        margin: auto;
+        width: 160px;
+        text-align:left;
+    
+    }
+    
+    .PrecioApartAB{
+        float:right;
+        font-family: Times New Roman;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        margin-right: 30px;
+        margin-top: -0px;
+        text-align: left;
+        
+        color: #2D2B2B;
+    }
+    
+    
+    a {
+        text-decoration: none;
+        margin: auto;
+        color: black;
+    }
+    
+}
+
+@media screen and (max-width: 40em) {
+    body {
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        overflow: hidden;
+    }   
+    
+    
+    h1 {
+    
+        font-family: 'Rokkitt';
+        font-style: normal;
+        font-weight: 600px;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+    
+    
+        color: #FFFFFF;
+    
+    
+    }
+    
+    
+    
+    section.buscador {
+    
+        grid-area: "buscador"; 
+        grid-auto-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        height: 180px;
+        background-image: url('https://firebasestorage.googleapis.com/v0/b/canary-dreams-db.appspot.com/o/home%2FHome.webp?alt=media&token=c3d07671-67d2-41fb-a4be-7fb59f1a20d5');
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        width: 240px;
+        border: 1px solid black;
+    }
+    
+    #buscador_home {
+    
+        width: 122px;
+        height: 25px;
+        margin-left: 55px;
+        margin-top: 30px;
+        font-size: 12px;
+    
+        background: #FFFFFF;
+        border-radius: 9px;
+    }
+    
+    
+    section.islas {
+        width: 240px;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-areas: 
+        "."
+        "."
+        "."
+        "."
+        "."
+        "."; 
+        gap: 0px 0px; 
+        height: 1370px;
+        margin: 0 auto;
+        margin-top: 0px;
+        
+    }
+    
+    .titulo1 { 
+        margin: auto;
+        width: 300px;
+        margin-top: 20px;
+    }
+    
+    
+    
+    
+    p {
+        font-family: 'Rokkitt';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 23px;
+        text-align: center;
+        color: black;
+    }
+    
+    
+    
+    h3 {
+        position: relative;
+        width: 100px;
+        height: 33px;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 30px;
+        border-radius: 5px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: rgba(255, 255, 255, 0.7);
+        top: -80px;
+        left: 20px;
+
+    }
+    
+    
+    .cuadroIsla {
+    
+        width: 100px;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: 20px;
+    
+    }
+    
+    .fotoIsla {
+        width: 200px;
+        height: 160px;
+        border-radius: 10px;
+    }
+    
+    .cuadro_texto_isla {
+    
+        width: 100px;
+        height: 33px;
+        margin-top: -20px;
+        margin-left: 10px;
+        background-color: rgba(255, 0, 0, 0.7);
+        border-radius: 5px;
+    }
+    
+    
+    section.apartamentos {
+    
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-areas: 
+        "."
+        "."
+        "."
+        "."
+        "."
+        "."; 
+        gap: 0px 0px; 
+        height: 1340px;
+        margin: auto;
+        margin-top: 20px;
+        width: 300px;
+        
+    }
+    
+    .titulo2 { 
+        grid-area: titulo2; 
+        margin: auto;
+        margin-top: 320px;
+        width: 300px;
+    }
+    
+    
+    
+    
+    .ApartamentosAB{
+        width: 600px;
+        height: 1256.72px;
+        margin: 0 auto;
+    }
+    
+    
+    
+    .CuadroApartAB {
+        width: 248.82px;
+        height: 207px;
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1.4fr 0.6fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "."
+            "datos"; 
+        margin: 0 auto;
+        margin-top: 10px;    
+        border:  2.731px solid #787878;
+        box-sizing: border-box;
+        border-radius: 9.9718px;
+    
+        color: #685D5D;
+    }
+    
+    .FotoCuadroApartAB {
+        width: 246.088px;
+        height: 140px;
+        border-radius: 8.2px 8.2px 0px 0px;
+        margin: auto;
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+    
+    .recuadroDatosAB{
+        width: 267.454px;
+        height: 25.568px;
+    }
+    
+    .FondoValApartAB{
+        float: right;
+        width: 30.15px;
+        height: 20.67px;
+        margin-top: 5px;
+        margin-right: 30px;
+    
+        background: #2A2867;
+        
+    
+    }
+    
+    .ValApartAB {
+        font-size:15px;
+        color: #ffffff;
+        margin:auto;
+        
+    
+    }
+    
+    .NombreApartAB{
+        float: left;
+        font-size:18px;
+        margin-top: 5px;
+        width: 200px;
+        height: 10px;
+        text-align:left;
+        
+    }
+    
+    .DirApartAB{
+        float: left;
+        font-size:15px;
+        font-weight: normal;
+        margin-top: -14.5px;
+        margin: auto;
+        width: 160px;
+        text-align:left;
+    
+    }
+    
+    .PrecioApartAB{
+        float:right;
+        font-family: Times New Roman;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        margin-right: 30px;
+        margin-top: -0px;
+        text-align: left;
+        
+        color: #2D2B2B;
+    }
+    
+    
+    a {
+        text-decoration: none;
+        margin: auto;
+        color: black;
+    }
+    
+}
+
+
+
+
+

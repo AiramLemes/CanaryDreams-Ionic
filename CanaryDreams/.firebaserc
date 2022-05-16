@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "canary-dreams-db": {
+      "hosting": {
+        "app": [
+          "canary-dreams-db"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "canary-dreams-db"
+  }
+}

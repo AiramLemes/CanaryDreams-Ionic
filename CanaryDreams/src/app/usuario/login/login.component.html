@@ -1,0 +1,29 @@
+<section>
+  <div id = CuadroBotonesLogReg>
+
+      <a href="./LogIn.html" class="boton">Iniciar Sesión</a> 
+      <a href="Registrarse.html" class="boton">Registrarse</a>
+      
+  </div>
+
+  <form class = "LogIn" [formGroup]="registerForm" (ngSubmit)="onLogin()">
+
+      <img src="../assets/Count.png" alt="" id="IconoLogIn">                
+      
+      
+      <div class="form-group">
+          <h2>EMAIL:</h2>
+          <input type="text" required class = camposLogIn placeholder="canary@dreams.es" formControlName = "email">
+      </div>
+      
+      <div class="form-group">
+          <h2>CONTRASEÑA:</h2>
+          <input type="password" required class = camposLogIn placeholder="********" formControlName = "password">
+      </div>   
+
+      
+      <input type="submit" id = BotonLogIn value = "Iniciar Sesión">
+      
+  </form>
+        
+</section>

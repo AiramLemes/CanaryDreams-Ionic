@@ -1,0 +1,331 @@
+
+@media screen and (min-width: 60em) {
+    section {
+
+        width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        grid-template-areas: 
+        "."; 
+        margin: auto;
+        padding-bottom: 100px;
+        margin-top: 20px;
+
+
+    }
+
+    h2 {
+
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 500;
+        font-size: large;
+        line-height: 16px;
+        margin-left: 16%;
+
+    }
+
+    form.LogIn {
+
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-template-areas: 
+        "." "." "." "."; 
+        margin-top: 150px;
+        margin-left: 50px;
+        
+    }
+
+    .LogIn {
+
+        width: 430px;
+        height: 439px;
+        margin: auto;
+        background: #F4E4E4;
+        border-radius: 32px;
+
+    }
+
+
+    #CuadroBotonesLogReg {
+        width: 400px;
+        height: 300px;
+        margin: auto;
+
+    }
+
+
+
+    .boton:hover {
+        background-color: #90F5A6;
+        text-decoration: none;
+    }
+
+
+    .boton {
+        text-decoration: none;
+        padding: 12px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #000000;
+        background-color: #C4C4C4;
+        border-radius: 3px;
+    }
+
+    .camposLogIn {
+
+        width: 270px;
+        height: 20px;
+        margin-left: auto;
+        background: #FFFFFF;
+        margin-left: 70px;
+
+    }
+
+
+    #BotonLogIn {
+
+        width: 200px;
+        height: 40px;
+        background: #FFFFFF;
+        margin-left: 110px;
+        border-radius: 44px;
+        margin-top: 20px;
+
+    }
+
+
+    #IconoLogIn {
+        
+        width: 60px;
+        height: 60px;
+        margin-left: 180px;
+        margin-top: 20px;
+
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+
+        background: linear-gradient(180deg, #E11E1E 0%, rgba(142, 51, 199, 0) 100%);
+
+    }
+}
+
+@media screen and (max-width: 60em) {
+    
+
+    section {
+
+        width: 860px; 
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: 
+        "botones" "formulario";
+        margin-top: 100px;
+        
+    }
+    
+    
+    h2 {
+    
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 600;
+        font-size: large;
+        line-height: 16px;
+        margin-left: 16%;
+    
+    }
+    
+    form.LogIn {
+
+        grid-area: formulario;
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr;  
+        margin: auto;
+        margin-top: -150px;
+        
+    }
+    
+    .LogIn {
+    
+        width: 430px;
+        height: 439px;
+        background: #F4E4E4;
+        border-radius: 32px;
+    
+    }
+    
+    
+    #CuadroBotonesLogReg {
+
+        margin-left: 35%;
+    }
+    
+    
+    
+    .boton:hover {
+        background-color: #90F5A6;
+        text-decoration: none;
+    }
+    
+    
+    .boton {
+        text-decoration: none;
+        padding: 12px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #000000;
+        background-color: #C4C4C4;
+        border-radius: 3px;
+    }
+    
+    .camposLogIn {
+    
+        width: 270px;
+        height: 20px;
+        background: #FFFFFF;
+        margin-left: 70px;
+    
+    }
+    
+    
+    #BotonLogIn {
+    
+        width: 200px;
+        height: 40px;
+        background: #FFFFFF;
+        margin-left: 100px;
+        border-radius: 44px;
+        margin-top: 20px;
+    
+    }
+    
+    
+    #IconoLogIn {
+        
+        width: 60px;
+        height: 60px;
+        margin-left: 180px;
+        margin-top: 20px;
+        border-radius: 50%;
+    
+        background: linear-gradient(180deg, #E11E1E 0%, rgba(142, 51, 199, 0) 100%);
+    
+    }
+
+
+}
+
+/* under 640 px */
+@media screen and (max-width: 40em ) {
+    
+
+    section {
+
+        width: 540px; 
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: 
+        "botones" "formulario";
+        margin-top: 100px;
+        
+    }
+    
+    
+    h2 {
+    
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 600;
+        font-size: medium;
+        line-height: 16px;
+        margin-left: 50px;
+    
+    }
+    
+    form.LogIn {
+
+        grid-area: formulario;
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr;  
+        margin: auto;
+        margin-top: -150px;
+        
+    }
+    
+    .LogIn {
+    
+        width: 60%;
+        height: 439px;
+        background: #F4E4E4;
+        border-radius: 32px;
+    
+    }
+    
+    
+    #CuadroBotonesLogReg {
+        
+        margin-left: 25%;
+    }
+    
+    
+    
+    .boton:hover {
+        background-color: #90F5A6;
+        text-decoration: none;
+    }
+    
+    
+    .boton {
+        text-decoration: none;
+        padding: 6px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #000000;
+        background-color: #C4C4C4;
+        border-radius: 3px;
+    }
+    
+    .camposLogIn {
+    
+        width: 210px;
+        height: 20px;
+        background: #FFFFFF;
+        margin-left: 50px;
+    
+    }
+    
+    
+    #BotonLogIn {
+    
+        width: 180px;
+        height: 30px;
+        background: #FFFFFF;
+        margin-left: 21%;
+        border-radius: 44px;
+        margin-top: 20px;
+    
+    }
+    
+    
+    #IconoLogIn {
+        
+        width: 60px;
+        height: 60px;
+        margin-left: 41%;
+        margin-top: 20px;
+        border-radius: 50%;
+    
+        background: linear-gradient(180deg, #E11E1E 0%, rgba(142, 51, 199, 0) 100%);
+    
+    }
+    
+
+}

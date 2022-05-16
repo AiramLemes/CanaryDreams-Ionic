@@ -1,0 +1,115 @@
+
+    <body>
+      <!--<include src="./header3.html"></include>-->
+
+
+      <!--Primera Seccion-->
+      <section class="isla_sec_pri">
+
+          <h1>{{nombre}}</h1>
+      </section>
+
+
+      <!--Segunda Seccion-->
+      <section class="isla_sec_seg">
+          <article class="isla_art_seg">
+              <div [innerHTML] = "texto1"></div>
+          </article>
+      </section>
+
+
+      <!--Tercera Seccion-->
+      <section class="isla_sec_ter">
+          
+          <a href="" [routerLink]="['/alojamiento',  alojamiento.id]" *ngFor="let alojamiento of alojamientos">
+              <div class="isla_div_ter">
+                  <img class= FotoCuadroApartAB src="{{alojamiento.imagenes.imagen}}">      
+                  <div class = "isla_recuadro_ter">
+
+                      <div class= FondoValApartAB>
+                          <p class= ValApartAB> 9.8 </p>
+                      </div>
+
+                      <p class= NombreApartAB> &nbsp; {{alojamiento.informacionGeneral.titulo}} </p>
+                      <p class= DirApartAB> &nbsp; {{alojamiento.direccion.direccion}} </p>
+
+                      <div class= derechaPrecioAB>
+                          <p class= PrecioApartAB> &nbsp; {{alojamiento.alquiler.precio}}€ </p>
+                      </div>
+                  </div>
+              </div>
+          </a>
+
+      </section>
+
+
+      <!--Cuarta Seccion-->
+      <section class="isla_sec_cua">
+          <section id="isla_sec_cua_text">
+              <article class="isla_art_cua">
+                  <div [innerHTML] = "texto2"></div>
+              </article>
+          </section>
+
+          <section class="isla_sec_cua_img">
+              <figure class="isla_fi_cua">
+                  <img class="isla_img_cua" src={{imagen1}}>
+              </figure>
+          </section>
+      </section>
+
+
+      <!--Quinta Seccion-->
+      <section class="isla_sec_qui">
+          <section class="isla_sec_qui_img">
+              <figure class="isla_fi_qui">
+                  <img class="isla_img_qui" src={{imagen2}}>
+              </figure>                
+          </section>
+              
+          <section class="isla_sec_qui_tex">
+              <article>
+                  <div [innerHTML] = "texto3"></div>
+              </article>
+          </section>
+      </section>
+
+
+      <!--Sexta Seccion-->
+      <section class="isla_sec_sex"></section>
+
+
+      <!--Septima Seccion-->
+      <section class="isla_sec_sep">
+          <section>
+              <article class="isla_art_sep">
+                  <div [innerHTML] = "texto4"></div>
+              </article>
+          </section>
+          
+          <section class="isla_sec_sep_img">
+              <figure class="isla_fi_sep">
+                  <img class="isla_img_sep" src={{imagen3}}/>
+              </figure>            
+          </section>
+      </section>
+
+
+      <!--Octava Seccion-->
+      <section class="isla_sec_oct">
+          <section class="isla_sec_oct_img">
+              <figure class="isla_fi_oct">
+                  <img class="isla_img_oct" src={{imagen4}} />
+              </figure>
+          </section>
+  
+          <section>
+              <article class="isla_art_oct">
+                  <div [innerHTML] = "texto5"></div>
+              </article>
+          </section>
+      </section>
+
+
+      <!--<include src="./footer.html"></include>-->
+  </body>

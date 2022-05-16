@@ -1,0 +1,42 @@
+
+<body> 
+    
+  <header>  
+      <a href="./">
+          
+          <img class = "logo" src="/assets/logo.png" alt="">
+      </a>
+
+      <a class="anfitrion" href="./anfitrion">
+          Hazte Anfitrion
+      </a>
+
+      <div class = "user"> 
+
+          <div class="dropdown">
+              <img class = "imagen" src="/assets/Menu1.png" alt="">
+              <div class="dropdown-content">
+                  <a class = "menu" href="./login">INICIAR SESIÓN</a> <br>
+                  <a class = "menu" href="./register">REGISTRARSE</a> <br>
+                  
+                  <hr>
+
+                  <a class = "menu" (click)="redireccionar('misReservas')">GESTIONAR MIS RESERVAS</a> <br>
+                  <a class = "menu" (click)="redireccionar('informacion')">MI CUENTA</a> <br>
+                  <a class = "menu" (click)="logOut()">CERRAR SESIÓN</a> <br>  
+              </div>
+            </div>
+          
+          <a (click)="redireccionar('informacion')">
+              <img class = "imagen" src="/assets/Count.png" alt=""> 
+          </a>
+      </div>
+
+      
+  </header>
+
+  
+
+</body>
+
+

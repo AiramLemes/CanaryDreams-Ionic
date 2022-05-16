@@ -1,0 +1,108 @@
+<body> 
+
+    <div class="container">
+
+
+        <section class = "buscador">
+
+            <div style=" margin-top: 10%; ">
+                <h1>¿ Dudas de dónde alojarte ?</h1>
+            </div>
+
+            <input id = "buscador_home" type = submit value = "Empezar a buscar" [routerLink]="['/buscador']">
+        </section>
+
+        <div class="titulo1">
+            <p>DESCUBRE TU ISLA DESTINO</p>    
+        </div>
+
+        <section class="islas">
+
+            <a href="" [routerLink]="['/isla',  isla.nombre]" class = "cuadroIsla" *ngFor="let isla of islas">
+                <img src="{{isla.imagenHome}}" alt="" class="fotoIsla">
+                <h3>&nbsp;{{isla.nombre}}</h3>
+            </a>
+
+        </section>
+
+        <div class="titulo2">
+            <p>APARTAMENTOS DESTACADOS</p>
+        </div>
+
+        <section class="apartamentos">
+
+
+            <a href = "" [routerLink]="['/alojamiento',  alojamiento.id]" class= CuadroApartAB *ngFor="let alojamiento of alojamientos">
+
+                <img class= FotoCuadroApartAB src="{{alojamiento.imagenes.imagen}}" alt="">
+                
+                <div class = recuadroDatosAB>
+    
+                    <div class= FondoValApartAB>
+    
+                        <p class= ValApartAB> {{alojamiento.valoracion}} </p>
+    
+                    </div>
+    
+                    <p class= NombreApartAB> &nbsp; {{alojamiento.informacionGeneral.titulo}} </p>
+    
+                    <p class= DirApartAB> &nbsp; {{alojamiento.direccion.direccion}} </p>
+    
+                    <div class= derechaPrecioAB>
+    
+                        <p class= PrecioApartAB> &nbsp; {{alojamiento.alquiler.precio}}€ </p>
+    
+                    </div>
+    
+                </div>
+    
+            </a>
+            
+
+
+        </section>
+    </div>
+    
+    
+
+    <template id = isla>
+        <div class="cuadroIsla">
+            <img class = "fotoIsla" src="" alt="">
+            <h3>&nbspIsla</h3>
+        </div>
+    </template>
+
+
+    <template>
+
+        <div class= CuadroApartAB>
+
+            <img class= FotoCuadroApartAB src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg" alt="">
+            
+            <div class = recuadroDatosAB>
+
+                <div class= FondoValApartAB>
+
+                    <p class= ValApartAB> 9.8 </p>
+
+                </div>
+
+                <p class= NombreApartAB> Nombre Apartamento </p>
+
+                <p class= DirApartAB> Dirección Apartamento </p>
+
+                <div class= derechaPrecioAB>
+
+                    <p class= PrecioApartAB> 999,99€ </p>
+
+                    <p class= DesdeApartAB> Desde </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </template>
+
+    
+</body>

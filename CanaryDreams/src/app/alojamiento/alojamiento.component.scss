@@ -1,0 +1,881 @@
+.container {  
+    width:960px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+
+
+  
+.titulo_fotos { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 1.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "."
+      "fotos";
+    grid-area: titulo_fotos;
+    margin: auto;
+    width: 900px;
+    
+}
+  
+.fotos {  
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "f1 f2";
+    grid-area: fotos;
+
+}
+
+.f1 { grid-area: f1; }
+
+.f2 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      ". .";
+    grid-area: f2;
+}
+  
+
+.fotoPequeña {
+
+    width: 200px;
+    height: 155px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+
+.fotoGrande {
+
+    width: 430px;
+    height: 320px;
+    margin: 0 auto;
+    margin-right: 10px;
+    
+}
+
+
+.datos {
+    display: grid; 
+    grid-template-columns: 1.3fr 0.7fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-area: datos;
+    grid-template-areas: 
+    ". d2"
+    ". d2";  
+    margin: auto;
+    width: 900px;
+}
+
+
+.d2 { 
+    margin-top: 30px;
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+.cuadroReserva {
+    width: 310px;
+    height: 280px;
+    margin: 0 auto;    
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin-top: 520px;
+    margin-left: -520px;
+}
+
+.cuadroInterior {
+    width: 292px;
+    height: 101px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#huespedes {
+
+    text-align: center; 
+    font-size: 18px; 
+    margin-top: 65px
+}
+
+
+#selec_reserva{
+    width: 240px;
+    margin-left: 35px;
+    margin-top: 30px;
+    background: #cc0773;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+}
+
+
+.direc_text_titulo{
+    width: 780px;
+    font-size: 26px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+}
+
+.direc_text_cont{
+    width: 780px;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    color: #454545;
+}
+
+#resumen {
+    width: 780px;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: left;
+    color: #454545;
+
+    margin-bottom: 20px;
+}
+
+
+.fotosLista {
+
+    width: 30px;
+    height: 30px;
+
+}
+
+
+ul {
+    margin-top: 50px;
+    margin-left: 110px;
+
+}
+
+
+.elementoLista {
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-area: datos; 
+    margin: auto;
+    margin-left: 40px;
+    
+}
+
+li {
+    list-style:none;
+}
+
+
+h4 {
+
+    font-family: 'Rokkitt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-left: -70px;
+    
+}
+
+.mapa { 
+    grid-area: mapa; 
+    margin: auto;
+}
+
+iframe {
+
+    width: 880px;
+    height: 318px;
+    margin-top: 40px;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom:40px;
+    
+}
+
+.valoraciones { grid-area: valoraciones; }
+  
+
+
+
+
+/***Tercera Seccion***/
+.direc_sec_ter{
+    width: 1144px;
+    height: 710px;
+
+    margin: 0 auto;
+    margin-top: 100;
+}
+
+/*Parte Alta Izquierda*/
+.direc_sec_ter_alt_izq{
+    width: 780px;
+    height: 100px;
+    margin: 0 auto;
+    float: left;
+}
+
+
+
+
+.llegada {
+    width: 145px;
+    height: 50px;
+    border-radius: 277px;
+    float: left;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.salida {
+    width: 145px;
+    height: 50px;
+    border-radius: 277px;
+    float: right;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.cuadro_fechas_input_y_texto {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+@media screen and (max-width: 60em) {
+
+
+    .container {  
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "titulo_fotos"
+          "datos"
+          "mapa"
+          "valoraciones";
+        width: 640px;
+        margin: 0 auto;
+
+    }
+    
+    #titulo {
+
+        font-family: 'Rokkitt';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        margin: auto;
+        margin-top: 120px;
+        margin-left: 180px;
+
+    }
+      
+    .titulo_fotos {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 1.4fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "."
+          "fotos";
+        grid-area: titulo_fotos;
+        margin: auto;
+        margin-top: -100px;
+        
+    }
+      
+    .fotos {  
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "f1"
+            "f2";
+        grid-area: fotos;
+        margin: auto;
+        width: 640px;
+        margin-left: -20px;
+    
+    }
+    
+    .f1 { grid-area: f1;
+        margin: auto;
+    }
+    
+    .f2 {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". ."
+          ". .";
+        grid-area: f2;
+        margin: auto;
+        width: max-content;
+
+    }
+      
+    
+    .fotoPequeña {
+    
+        width: 200px;
+        height: 120px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-left: 5px;
+    
+    
+    }
+    
+    .fotoGrande {
+    
+        width: 500px;
+        height: 270px;
+        margin: 0 auto;
+        margin-right: 10px;
+        
+    }
+    
+        
+    .datos {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.5fr 0.5fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "."
+            "d2"; 
+        grid-area: datos; 
+        margin-left: -150px;
+        }
+        
+    .d2 {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            ". ."; 
+        grid-area: d2; 
+    }
+
+    
+    .cuadroReserva {
+        width: 210px;
+        height: 280px;
+        margin: 0 auto;    
+        border: 1px solid #000000;
+        border-radius: 20px;
+        margin-left: 340px;
+        margin-top: 35px;
+    }
+    
+    .cuadroInterior {
+        
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        width: 192px;
+        height: 101px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 3px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    
+    
+    #selec_reserva {
+        width: 150px;
+        margin: auto;
+        margin-top: 50px;
+        margin-left: 28px;
+        background: #cc0773;
+        border-radius: 8px;
+        font-size: 18px;
+        color: white;
+    }
+    
+    
+    .direc_text_titulo {
+        width: 500px;
+        font-size: 18px;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center ;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .direc_text_cont {
+        width: 500px;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #454545;
+        text-align: justify, center;
+        
+    }
+
+    #huespedes {
+
+        text-align: center; 
+        font-size: 18px; 
+        margin-top: 10px
+    }
+
+    #resumen {
+        width: 330px;
+        font-size: 18px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 20px;
+        color: #454545;
+        margin-bottom: 20px;
+    }
+    
+    
+    .fotosLista {
+    
+        width: 30px;
+        height: 30px;
+    
+    }
+    
+    
+    ul {
+        margin-left: 20px;
+    }
+    
+    
+    .elementoLista {
+    
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-area: datos; 
+        margin: auto;
+        margin-left: 40px;
+        
+    }
+    
+    li {
+        list-style:none;
+        width: 300px;
+
+    }
+    
+    
+    h4 {
+    
+        font-family: 'Rokkitt';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        margin-top: 5px;
+        margin-left: -70px;
+        
+    }
+    
+    .mapa { 
+        grid-area: mapa; 
+        margin: auto;
+        
+    }
+    
+    iframe {
+    
+        width: 500px;
+        height: 200px;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin-top: -400px;
+        margin-left: -310px;
+        
+    }
+    
+    .valoraciones { grid-area: valoraciones; }
+          
+    
+    
+    .llegada {
+        width: 190px;
+        height: 50px;
+        border-radius: 277px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+    
+    .salida {
+        width: 190px;
+        height: 50px;
+        border-radius: 277px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+    
+    .cuadro_fechas_input_y_texto {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 40em) {
+
+
+    .container {  
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "titulo_fotos"
+          "datos"
+          "mapa"
+          "valoraciones";
+
+        width: 300px;
+
+    }
+    
+    #titulo {
+        font-family: 'Rokkitt';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        margin: auto;
+        margin-top: -10px;
+        margin-left: 210px;
+
+    }
+      
+    .titulo_fotos {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 1.4fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "."
+          "fotos";
+        grid-area: titulo_fotos;
+        margin-top: 10px;
+        margin-left: -179px;
+        width: 200px;
+        
+    }
+      
+    .fotos {  
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "f1"
+            "f2";
+        grid-area: fotos;
+        margin: auto;
+    
+    }
+    
+    .f1 { grid-area: f1;
+        margin: auto;
+    }
+    
+    .f2 {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". ."
+          ". .";
+        grid-area: f2;
+        margin: auto;
+        width: max-content;
+
+    }
+      
+    
+    .fotoPequeña {
+    
+        width: 100px;
+        height: 80px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-left: 5px;
+    
+    
+    }
+    
+    .fotoGrande {
+    
+        width: 250px;
+        height: 170px;
+        margin: 0 auto;
+        margin-right: 10px;
+        
+    }
+    
+        
+    .datos {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.5fr 0.5fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "."
+            "d2"; 
+        grid-area: datos; 
+        margin-left: -300px;
+    }
+        
+    .d2 {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            ". ."; 
+        grid-area: d2; 
+    }
+
+    
+    .cuadroReserva {
+        width: 210px;
+        height: 280px;
+        margin: 0 auto;    
+        border: 1px solid #000000;
+        border-radius: 20px;
+        margin-left: 340px;
+        margin-top: 35px;
+        margin-bottom: -800px;
+    }
+    
+    .cuadroInterior {
+        
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        width: 192px;
+        height: 101px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 3px;
+        margin-top: 30px;
+        margin-left:10px;
+    }
+    
+    
+    #selec_reserva {
+        width: 150px;
+        margin: auto;
+        margin-top: 50px;
+        margin-left: 28px;
+        background: #cc0773;
+        border-radius: 8px;
+        font-size: 18px;
+        color: white;
+    }
+    
+    
+    .direc_text_titulo {
+        width: 200px;
+        font-size: 18px;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center ;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .direc_text_cont {
+        width: 200px;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #454545;
+        text-align: justify, center;
+        
+    }
+
+    #huespedes {
+
+        text-align: center; 
+        font-size: 18px; 
+        margin-top: 10px
+    }
+
+    #resumen {
+        width: 200px;
+        font-size: 18px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 20px;
+        color: #454545;
+        margin-bottom: 20px;
+    }
+    
+    
+    .fotosLista {
+    
+        width: 30px;
+        height: 30px;
+    
+    }
+    
+    
+    ul {
+        margin-left: 20px;
+    }
+    
+    
+    .elementoLista {
+    
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-area: datos; 
+        margin: auto;
+        margin-left: 40px;
+        
+    }
+    
+    li {
+        list-style:none;
+        width: 300px;
+
+    }
+    
+    
+    h4 {
+    
+        font-family: 'Rokkitt';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        margin-top: 5px;
+        margin-left: -70px;
+        
+    }
+    
+    .mapa { 
+        grid-area: mapa; 
+        margin: auto;
+        
+    }
+    
+    iframe {
+    
+        width: 200px;
+        height: 100px;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin-top: - 00px;
+        margin-left: -260px;
+        
+    }
+    
+    .valoraciones { grid-area: valoraciones; }
+      
+    
+    
+    
+    
+    
+    .llegada {
+        width: 190px;
+        height: 50px;
+        border-radius: 277px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+    
+    .salida {
+        width: 190px;
+        height: 50px;
+        border-radius: 277px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+    
+    .cuadro_fechas_input_y_texto {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+
+}
