@@ -1,4 +1,4 @@
-body {
+.container {
     margin: 0 auto;
     margin-bottom: 100px;
     margin-top: 100px;
@@ -86,7 +86,7 @@ p {
 
 h3 {
     position: relative;
-    width: 100px;
+    width: 130px;
     height: 33px;
     font-weight: normal;
     font-size: 17px;
@@ -101,7 +101,7 @@ h3 {
 
 .cuadroIsla {
 
-    width: 100px;
+    width: 180px;
     height: 200px;
     margin-top: 80px;
     margin-left: 20px;
@@ -114,15 +114,6 @@ h3 {
     border-radius: 10px;
 }
 
-.cuadro_texto_isla {
-
-    width: 100px;
-    height: 33px;
-    margin-top: -20px;
-    margin-left: 10px;
-    background-color: rgba(255, 0, 0, 0.7);
-    border-radius: 5px;
-}
 
 
 section.apartamentos {
@@ -208,8 +199,6 @@ section.apartamentos {
     font-size:15px;
     color: #ffffff;
     margin:auto;
-    
-
 }
 
 .NombreApartAB{
@@ -228,7 +217,7 @@ section.apartamentos {
     font-weight: normal;
     margin-top: -14.5px;
     margin: auto;
-    width: 160px;
+    width: 180px;
     text-align:left;
 
 }
@@ -344,7 +333,7 @@ a {
     
     h3 {
         position: relative;
-        width: 100px;
+        width: 130px;
         height: 33px;
         font-weight: normal;
         font-size: 17px;
@@ -359,9 +348,9 @@ a {
     
     .cuadroIsla {
     
-        width: 100px;
+        width: 180px;
         height: 200px;
-        margin-top: 70px;
+        margin-top: 50px;
         margin-left: 20px;
     
     }
@@ -371,6 +360,7 @@ a {
         height: 160px;
         border-radius: 10px;
     }
+    
     
     .cuadro_texto_isla {
     
@@ -487,7 +477,7 @@ a {
         font-weight: normal;
         margin-top: -14.5px;
         margin: auto;
-        width: 160px;
+        width: 180px;
         text-align:left;
     
     }
@@ -604,11 +594,9 @@ a {
         color: black;
     }
     
-    
-    
     h3 {
         position: relative;
-        width: 100px;
+        width: 130px;
         height: 33px;
         font-weight: normal;
         font-size: 17px;
@@ -618,13 +606,12 @@ a {
         background-color: rgba(255, 255, 255, 0.7);
         top: -80px;
         left: 20px;
-
     }
     
     
     .cuadroIsla {
     
-        width: 100px;
+        width: 180px;
         height: 200px;
         margin-top: 10px;
         margin-left: 20px;
@@ -636,6 +623,8 @@ a {
         height: 160px;
         border-radius: 10px;
     }
+    
+    
     
     .cuadro_texto_isla {
     
@@ -756,7 +745,7 @@ a {
         font-weight: normal;
         margin-top: -14.5px;
         margin: auto;
-        width: 160px;
+        width: 180px;
         text-align:left;
     
     }
