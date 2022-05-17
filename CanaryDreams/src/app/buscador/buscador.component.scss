@@ -1,4 +1,4 @@
-body.AB{
+.AB{
 
     font-family: Roboto Condensed;
     font-style: normal;
@@ -6,45 +6,36 @@ body.AB{
     text-align: center;
     color: #000000; 
 
-    margin: 0 auto;
-
-    padding-top: 60px; 
+    margin: 0 auto; 
     padding-bottom: 100px;
     width: 100%;
     overflow: hidden;
 }
 
-.boton{
-    float: right;
-    width: 80px;
-    height:40px;
-    margin-left: 40px;
-    margin-top: 12px;
-    border-radius:7px;
-    background-color: rgba(144, 255, 122, 0.467);
+
+.inputBuscador {
+    width: 300px;
+    height: 40px;
+    margin: auto;
 }
+
 
 section.BuscadorAB {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    ".";
-    width: 680.8px;
     margin: 0 auto;
+    margin-top: 100px;
 
 }
 
 .TextoBuscadorAB{
     font-size:22px;
-    width: 480.8px;
+    width: 500px;
     height: 65.62px;
-    margin:auto;
+    margin: auto;
     line-height:65px;
     background: #F4E4E4;
     border-radius: 14px;
-    float: left;
-
+    display: flex;
 
 }
 
@@ -195,48 +186,14 @@ section.ApartamentosAB {
     }
 
     .TextoBuscadorAB{
-        font-size:17px;
-        width: 350.8px;
+        font-size:20px;
+        width: 600px;
         height: 45.62px;
         margin:auto;
         line-height:45px;
         background: #F4E4E4;
         border-radius: 14px;
-        float: left;
-    
-    
-    }
-
-    .boton{
-        float: right;
-        width: 60px;
-        height:30px;
-        margin-left: 30px;
-        margin-top: 7px;
-        border-radius:7px;
-        background-color: rgba(144, 255, 122, 0.467);
-    }
-    
-    
-    section.BuscadorAB {
-        width: 400px;
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        ".";
-        margin: 0 auto;
-
-    
-    }
-    
-    .BuscadorAB{
-    
-        width: 500px;
-        height: 65px;
-        margin:auto;
-        border-radius: 14px;
-        margin-bottom: 30px;
+        display: flex;
     
     }
     
@@ -292,6 +249,12 @@ section.ApartamentosAB {
         height: 65.568px;
         margin-left: -1px;
         
+    }
+
+    .inputBuscador {
+        width: 400px;
+        height: 30px;
+        margin: auto;
     }
     
     .FondoValApartAB{
@@ -396,47 +359,22 @@ section.ApartamentosAB {
 section.BuscadorAB {
 
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    ".";
     width: 300px;
 
 }
 
 .TextoBuscadorAB{
     font-size:10px;
-    width: 200.8px;
+    width: 300px;
     height: 35.62px;
     margin:auto;
     line-height:35px;
     background: #F4E4E4;
     border-radius: 14px;
-    float: left;
-
-
+    display: flex;
 }
 
-.boton{
-    float: right;
-    width: 50px;
-    height:25px;
-    margin-left: 20px;
-    margin-top: 7px;
-    border-radius:7px;
-    font-size:12px;
-    background-color: rgba(144, 255, 122, 0.467);
-}
 
-.BuscadorAB{
-
-    width: 260px;
-    height: 60px;
-    margin:auto;
-    border-radius: 14px;
-    margin-bottom: 30px;
-
-}
 
 /*------------------Apartamentos----------------------*/
 
@@ -560,9 +498,10 @@ section.ApartamentosAB {
 }
 }
 
-.buscador640{
-    width: 100px;
-    height: 15px;
+.inputBuscador {
+    width: 200px;
+    height: 20px;
+    margin: auto;
 }
 
 .pasarPaginaAB {

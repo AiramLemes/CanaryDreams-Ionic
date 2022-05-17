@@ -1,45 +1,46 @@
-<body class = AB>
+<ion-content>
+    
+    <!--Buscador-->
 
-  <!--Buscador-->
+    <section class= BuscadorAB> 
+        <form [formGroup]="buscador" class="TextoBuscadorAB">
+             &nbsp; Buscando : 
+            <input type="text" class="inputBuscador" formControlName="buscar" (change)="buscar($event)"> 
+        </form>
+        
+        
+    </section>
 
-  <section class= BuscadorAB> 
-      <form [formGroup]="buscador">
-          <h2 class= TextoBuscadorAB> Buscando : <input type="text" class = buscador640 formControlName="buscar"> </h2>
-      </form>
-      <input type = submit class = boton value = "Buscar" (click)="buscar()">
+    <!--Apartamentos-->
+    <section class= ApartamentosAB>
+
+        <a [routerLink]="['/alojamiento/',  alojamiento.id]" href = "" class= CuadroApartAB *ngFor="let alojamiento of alojamientos">
+
+            <img class= FotoCuadroApartAB src="{{alojamiento.imagenes.imagen}}" alt="">
+            
+            <div class = recuadroDatosAB>
+
+                <div class= FondoValApartAB>
+
+                    <p class= ValApartAB> {{alojamiento.valoracion}} </p>
+
+                </div>
+
+                <p class= NombreApartAB> &nbsp; {{alojamiento.informacionGeneral.titulo}} </p>
+
+                <p class= DirApartAB> &nbsp; {{alojamiento.direccion.direccion}} </p>
+
+                <div class= derechaPrecioAB>
+
+                    <p class= PrecioApartAB> &nbsp; {{alojamiento.alquiler.precio}}€ </p>
+                    <p class= DesdeApartAB>  </p>
+                </div>
+
+            </div>
+
+        </a>
+                
+    </section>
+
       
-  </section>
-
-  <!--Apartamentos-->
-  <section class= ApartamentosAB>
-
-      <a [routerLink]="['/alojamiento/',  alojamiento.id]" href = "" class= CuadroApartAB *ngFor="let alojamiento of alojamientos">
-
-          <img class= FotoCuadroApartAB src="{{alojamiento.imagenes.imagen}}" alt="">
-          
-          <div class = recuadroDatosAB>
-
-              <div class= FondoValApartAB>
-
-                  <p class= ValApartAB> {{alojamiento.valoracion}} </p>
-
-              </div>
-
-              <p class= NombreApartAB> &nbsp; {{alojamiento.informacionGeneral.titulo}} </p>
-
-              <p class= DirApartAB> &nbsp; {{alojamiento.direccion.direccion}} </p>
-
-              <div class= derechaPrecioAB>
-
-                  <p class= PrecioApartAB> &nbsp; {{alojamiento.alquiler.precio}}€ </p>
-                  <p class= DesdeApartAB>  </p>
-              </div>
-
-          </div>
-
-      </a>
-              
-  </section>
-
-      
-</body>
+</ion-content>

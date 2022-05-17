@@ -29,7 +29,7 @@ export class BuscadorComponent implements OnInit {
     });
     
 
-    buscar() {
+    buscar(event: any) {
         var buscar:string = this.buscador.get("buscar")!.value
         buscar = buscar.toLowerCase()
     
