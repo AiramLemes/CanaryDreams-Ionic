@@ -1,5 +1,5 @@
 
-body.MJ{
+div.MJ{
 
     font-family: Roboto Condensed;
     font-style: normal;
@@ -16,7 +16,7 @@ body.MJ{
     margin-top: 65px;
     margin: auto;
     width: 945px;
-    margin-top: -145px;
+    padding-top: 45px;
     overflow: hidden;
 }
 
@@ -117,7 +117,7 @@ section.ApartamentosMJ {
     font-size:12px;
     font-weight: normal;
     margin-top: 25px;
-    margin-left: -65px;
+    margin-left: -20px;
 
 }
 
@@ -187,7 +187,7 @@ section.ApartamentosMJ {
 @media screen and (max-width: 60em) {
     
 
-    body.MJ{
+    div.MJ{
 
         font-family: Roboto Condensed;
         font-style: normal;
@@ -197,7 +197,7 @@ section.ApartamentosMJ {
     
         margin: 0 auto;
     
-        margin-top: -145px; 
+        padding-top: 45px;
         padding-bottom: 70px;
         width: 600px;
         overflow: hidden;
@@ -285,7 +285,7 @@ section.ApartamentosMJ {
 @media screen and (max-width: 40em) {
     
 
-    body.MJ{
+    div.MJ{
 
         font-family: Roboto Condensed;
         font-style: normal;
@@ -294,7 +294,7 @@ section.ApartamentosMJ {
     
         margin: 0 auto;
     
-        margin-top: -145px; 
+        padding-top: 45px;
         padding-bottom: 40px;
         width: 320px;
         overflow: hidden;
@@ -307,7 +307,7 @@ section.ApartamentosMJ {
     
     .Imagen1MJ{
         width: 180px;
-        height: 100px;
+        height: 140px;
         margin-left: -30px;
         margin-top: 10px;
     }

@@ -46,7 +46,7 @@ ion-footer {
 }
 
 @media screen and (max-width: 60em){
-    footer {
+    .footer {
         position: fixed;
         left:0;
         bottom:0;
@@ -97,7 +97,7 @@ ion-footer {
 }
 
 @media screen and (max-width: 40em){
-    footer {
+    .footer {
         position: fixed;
         left:0;
         bottom:0;
@@ -117,7 +117,7 @@ ion-footer {
     .fuente {
         font-weight: 500;
         font-size: 8px;
-        line-height: 18px;
+        line-height: 40px;
         text-align: center;
         margin-left: 8px;
     }
@@ -142,8 +142,8 @@ ion-footer {
     }
 
     .img_redes{
-        width:13px;
-        height:13px;
+        width:22px;
+        height:15px;
         margin-left: -8px;
     }
 
