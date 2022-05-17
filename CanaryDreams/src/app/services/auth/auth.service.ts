@@ -8,7 +8,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 @Injectable()
 
 export class AuthService {
-    
+
   
 	private user: any;
 
@@ -51,20 +51,17 @@ export class AuthService {
 	async register (email:string, password:string, nombre:string, apellidos:string,
 		 sexo:string, fecha:string, telefono: string, dni: string) {
 		
+		
 
 		await this.afAuth.createUserWithEmailAndPassword(email, password)
-		.then((userCredential) => {
-
-			this.db.collection('usuarios').
+		.then(async (userCredential) => {
+			console.log(nombre, apellidos, sexo, fecha, telefono, dni)
+			await this.db.collection('usuarios').
 			doc(userCredential.user?.uid).
 			set({nombre: nombre, apellidos: apellidos, sexo: sexo, 
-			fechaDeNacimiento: fecha, telefono: telefono, dni: dni, correo: email});
-
+			fechaDeNacimiento: fecha, telefono: telefono, dni: dni, correo: email}).then( (err) => console.log(err));
 			alert('Se ha registrado correctamente');
-			window.location.assign('/');
-
-			// Comprobar si al registrarse ya se ha iniciado sesión.
-
+			window.location.assign("/")
 		});
 		
 	}
@@ -137,6 +134,12 @@ export class AuthService {
 	getUid(): string {
 		return this.user.uid
 	}
+
+	actualizarFotoPerfil(URL: string) {
+        this.db.doc("usuarios/" + this.user.uid)
+		.update({fotoPerfil: URL})
+    }
+    
 
 }
 

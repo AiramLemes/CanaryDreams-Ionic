@@ -9,14 +9,14 @@
 
     
 
-    <div>
+    <div> 
         <form class="FormularioRegistrarse" [formGroup]="registerForm" (ngSubmit)="onRegister()">
 
             <div id = IconoLogIn></div><div></div>
             <div class="form-group">
                 <h2>Nombre</h2>
                 <input type="text" required class="camposRegistrarse" formControlName = "nombre">
-
+                
             </div>
 
             <div class="form-group">
@@ -28,9 +28,9 @@
                 <h2>Sexo</h2>
                 <select required class="camposRegistrarse" formControlName = "sexo">
                     <option value="0" selected>Seleccione uno:</option>
-                    <option value="1">Femenino</option>
-                    <option value="2">Masculino</option>
-                    <option value="3">Indeterminado</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Indeterminado">Indeterminado</option>
                 </select> 
             </div>
 
@@ -56,7 +56,7 @@
 
             <div>
                 <h2>Confirmar Correo Electrónico</h2>
-                <input type="email" required class="camposRegistrarse">
+                <input type="email" required class="camposRegistrarse" formControlName = "password">
             </div>
 
             <div class="form-group">
@@ -70,7 +70,7 @@
                 <input type="password" required class="camposRegistrarse">
             </div>
 
-            <input id = "botonRegistrarse" type="submit" value = "Registrarse">
+            <input id = "botonRegistrarse" type="submit"  value = "Registrarse">
             
 
         </form>

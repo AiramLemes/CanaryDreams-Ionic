@@ -1,60 +1,72 @@
 <ion-content>
-<div class="container">
+    <div class="container">
+                
+        <app-menu></app-menu>
+
+        <section class="data">
             
-  <app-menu></app-menu>
-
-  <section class="data">
-      
-      <img class = "imagen" src="/assets/settings.png" alt="d">
-
-      <form [formGroup]="personalData" class="personalData">
-
-              <div class="campos">
-                  <label for="">Nombre</label>
-                  <input type="text" class="camposRegistrarse" required formControlName = "nombre">
-              </div>
-
-              <div class="campos">
-                  <label for="">Apellidos</label>
-                  <input type="text" class="camposRegistrarse" required formControlName = "apellidos">
-              </div>
+            <img class = "imagen" src="{{fotoPerfil}}" alt="d">
 
 
-              <div class="campos">
-                  <label for="">DNI</label>
-                  <input type="text" class="camposRegistrarse" formControlName = "dni" readonly>
-              </div>
-              
-              <div class="campos">
-                  <label for="">Teléfono</label>
-                  <input type="text" class="camposRegistrarse" required formControlName = "telefono">
-              </div>
+            <form [formGroup]="personalData" class="personalData">
 
-              <div class="campos">
-                  <label for="">Fecha de Nacimiento</label>
-                  <label for=""></label>
-                  <input type="text" class="camposRegistrarse" formControlName = "fecha" readonly>
-              </div>
+                    <div class="campos">
+                        <label for="">Nombre</label>
+                        <input type="text" class="camposRegistrarse" required formControlName = "nombre">
+                    </div>
 
-              <div class="campos">
-                  <label for="">Sexo</label>
-                  <input type="text" class="camposRegistrarse" formControlName = "sexo" readonly>
-              </div>
-
-              <div class="correo">
-                  <label for="">Correo</label>
-                  <input type="text" class="camposRegistrarse" formControlName = "correo" readonly>
-              </div>
-
-          
-
-      </form>
-
-      <input type="button" class="boton" (click)="aplicarCambios()" value="APLICAR CAMBIOS">
+                    <div class="campos">
+                        <label for="">Apellidos</label>
+                        <input type="text" class="camposRegistrarse" required formControlName = "apellidos">
+                    </div>
 
 
-  </section>
-  
+                    <div class="campos">
+                        <label for="">DNI</label>
+                        <input type="text" class="camposRegistrarse" formControlName = "dni" readonly>
+                    </div>
+                    
+                    <div class="campos">
+                        <label for="">Teléfono</label>
+                        <input type="text" class="camposRegistrarse" required formControlName = "telefono">
+                    </div>
 
-</div>
+                    <div class="campos">
+                        <label for="">Fecha de Nacimiento</label>
+                        <label for=""></label>
+                        <input type="text" class="camposRegistrarse" formControlName = "fecha" readonly>
+                    </div>
+
+                    <div class="campos">
+                        <label for="">Sexo</label>
+                        <input type="text" class="camposRegistrarse" formControlName = "sexo" readonly>
+                    </div>
+
+                    <div class="campos">
+                        <label for="">Correo</label>
+                        <input type="text" class="camposRegistrarse" formControlName = "correo" readonly>
+                    </div>
+
+
+                    <form [formGroup]="archivoForm" class="campos">
+                        <label for="">Actualizar Foto Perfil</label>
+                        <input class = "botonSeleccionarArchivoAP5" type="file" (change)="cambioArchivo($event)" formControlName="archivo" accept=".jpeg, .webp, .png, .jpg">
+                    </form>
+
+                    <div class="campos">
+                        <label for="">&nbsp;</label>
+                        <input class="camposRegistrarse" type="button" value="SUBIR" (click)="subirArchivo()">
+                    </div>
+
+                
+
+            </form>
+
+            <input type="button" class="boton" (click)="aplicarCambios()" value="APLICAR CAMBIOS">
+
+
+        </section>
+
+
+    </div>
 </ion-content>

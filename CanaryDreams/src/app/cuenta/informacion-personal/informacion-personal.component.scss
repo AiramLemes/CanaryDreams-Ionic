@@ -36,8 +36,9 @@
     margin: auto;
     width: 200px;
     height: 200px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 220px;
+    border-radius: 200px;
 }
 
 
@@ -73,7 +74,7 @@ label {
     grid-template-areas:
       ". . ."
       ". . ."
-      "correo . .";
+      ". . .";
     grid-area: personalData;
     margin: 0 auto;
     width: 900px;
