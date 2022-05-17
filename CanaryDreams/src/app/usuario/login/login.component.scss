@@ -1,29 +1,46 @@
 
 @media screen and (min-width: 60em) {
     section {
+        overflow: hidden;
 
-        width: 1000px;
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr; 
         grid-template-rows: 1fr; 
-        grid-template-areas: 
-        "."; 
+        grid-template-areas: "."; 
         margin: auto;
-        padding-bottom: 100px;
-        margin-top: 20px;
-
+        margin-top: 100px;
 
     }
 
     h2 {
 
+        margin-left: 16%;
         font-family: 'Roboto Condensed';
         font-style: normal;
         font-weight: 500;
         font-size: large;
         line-height: 16px;
-        margin-left: 16%;
 
+        margin-bottom: 10px;
+        margin-top: -50px;
+    }
+
+    .boton:hover {
+        background-color: #90F5A6;
+        text-decoration: none;
+    }
+
+    .boton {
+        text-decoration: none;
+        padding: 12px;
+        font-weight: 600px;
+        font-size: 20px;
+        color: #000000;
+        background-color: #C4C4C4;
+        border-radius: 3px;
+
+        margin-top: 200px;
     }
 
     form.LogIn {
@@ -33,83 +50,56 @@
         grid-template-rows: 1fr 1fr 1fr 1fr; 
         grid-template-areas: 
         "." "." "." "."; 
-        margin-top: 150px;
-        margin-left: 50px;
-        
+        margin-top: auto;
+        margin: 0 auto;
     }
 
     .LogIn {
 
         width: 430px;
-        height: 439px;
-        margin: auto;
+        height: 440px;
         background: #F4E4E4;
         border-radius: 32px;
 
     }
 
-
-    #CuadroBotonesLogReg {
-        width: 400px;
-        height: 300px;
-        margin: auto;
-
-    }
-
-
-
-    .boton:hover {
-        background-color: #90F5A6;
-        text-decoration: none;
-    }
-
-
-    .boton {
-        text-decoration: none;
-        padding: 12px;
-        font-weight: 600;
-        font-size: 20px;
-        color: #000000;
-        background-color: #C4C4C4;
-        border-radius: 3px;
-    }
-
     .camposLogIn {
-
-        width: 270px;
+        
+        margin-left: 16%;
+        width: 280px;
         height: 20px;
-        margin-left: auto;
         background: #FFFFFF;
-        margin-left: 70px;
 
     }
-
 
     #BotonLogIn {
 
         width: 200px;
         height: 40px;
         background: #FFFFFF;
-        margin-left: 110px;
+        margin-left: 25%;
         border-radius: 44px;
-        margin-top: 20px;
+        margin-bottom: 10%;
 
     }
-
 
     #IconoLogIn {
         
         width: 60px;
         height: 60px;
-        margin-left: 180px;
-        margin-top: 20px;
-
+        margin-left: 45%;
+        margin-top: 10px;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
         border-radius: 50%;
 
         background: linear-gradient(180deg, #E11E1E 0%, rgba(142, 51, 199, 0) 100%);
 
+    }
+
+    #CuadroBotonesLogReg {
+        margin-top: 5%;
+        margin-left: 25%;
     }
 }
 
@@ -118,14 +108,14 @@
 
     section {
 
-        width: 860px; 
+        width: 100%;
+        overflow: hidden; 
         display: grid;
         grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 1fr; 
+        grid-template-rows: 0.5fr 2fr; 
+        margin-top: 50px;
         grid-template-areas: 
         "botones" "formulario";
-        margin-top: 100px;
-        
     }
     
     
@@ -133,8 +123,8 @@
     
         font-family: 'Roboto Condensed';
         font-style: normal;
-        font-weight: 600;
-        font-size: large;
+        font-weight: 500;
+        font-size: medium;
         line-height: 16px;
         margin-left: 16%;
     
@@ -144,17 +134,16 @@
 
         grid-area: formulario;
         display: grid;
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 1fr 1fr 1fr;  
-        margin: auto;
-        margin-top: -150px;
+        grid-template-columns: 1fr ; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        margin: 0 auto;
+        margin-top: auto;
         
     }
     
     .LogIn {
-    
         width: 430px;
-        height: 439px;
+        height: 440px;
         background: #F4E4E4;
         border-radius: 32px;
     
@@ -163,7 +152,7 @@
     
     #CuadroBotonesLogReg {
 
-        margin-left: 35%;
+        margin: auto;
     }
     
     
@@ -182,14 +171,15 @@
         color: #000000;
         background-color: #C4C4C4;
         border-radius: 3px;
+        margin-top: 200px;
     }
     
     .camposLogIn {
     
-        width: 270px;
+        margin-left: 16%;
+        width: 280px;
         height: 20px;
         background: #FFFFFF;
-        margin-left: 70px;
     
     }
     
@@ -199,9 +189,9 @@
         width: 200px;
         height: 40px;
         background: #FFFFFF;
-        margin-left: 100px;
+        margin-left: 25%;
+        margin-bottom: 10%;
         border-radius: 44px;
-        margin-top: 20px;
     
     }
     
@@ -210,12 +200,14 @@
         
         width: 60px;
         height: 60px;
-        margin-left: 180px;
-        margin-top: 20px;
+        margin-left: 43%;
+        margin-top: 10px;
+    
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
         border-radius: 50%;
     
         background: linear-gradient(180deg, #E11E1E 0%, rgba(142, 51, 199, 0) 100%);
-    
     }
 
 
@@ -227,13 +219,14 @@
 
     section {
 
-        width: 540px; 
+        width: 100%;
+        overflow: hidden; 
         display: grid;
         grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 1fr; 
+        grid-template-rows: 0.5fr 2fr;
         grid-template-areas: 
         "botones" "formulario";
-        margin-top: 100px;
+        margin-top: 50px;
         
     }
     
@@ -242,10 +235,10 @@
     
         font-family: 'Roboto Condensed';
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: medium;
         line-height: 16px;
-        margin-left: 50px;
+        margin-left: 16%;
     
     }
     
@@ -253,17 +246,17 @@
 
         grid-area: formulario;
         display: grid;
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 1fr 1fr 1fr;  
-        margin: auto;
-        margin-top: -150px;
+        grid-template-columns: 1fr ; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        margin: 0 auto;
+        margin-top: auto;
         
     }
     
     .LogIn {
     
-        width: 60%;
-        height: 439px;
+        width: 270px;
+        height: 410px;
         background: #F4E4E4;
         border-radius: 32px;
     
@@ -272,7 +265,7 @@
     
     #CuadroBotonesLogReg {
         
-        margin-left: 25%;
+        margin: auto;
     }
     
     
@@ -285,32 +278,33 @@
     
     .boton {
         text-decoration: none;
-        padding: 6px;
+        padding: 12px;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 16px;
         color: #000000;
         background-color: #C4C4C4;
         border-radius: 3px;
+        margin-top: 200px;
     }
     
     .camposLogIn {
     
-        width: 210px;
+        margin-left: 16%;
+        width: 180px;
         height: 20px;
         background: #FFFFFF;
-        margin-left: 50px;
     
     }
     
     
     #BotonLogIn {
     
-        width: 180px;
+        width: 150px;
         height: 30px;
         background: #FFFFFF;
-        margin-left: 21%;
+        margin-left: 23%;
+        margin-bottom: 10%;
         border-radius: 44px;
-        margin-top: 20px;
     
     }
     
@@ -319,12 +313,14 @@
         
         width: 60px;
         height: 60px;
-        margin-left: 41%;
-        margin-top: 20px;
+        margin-left: 40%;
+        margin-top: 10px;
+    
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
         border-radius: 50%;
     
         background: linear-gradient(180deg, #E11E1E 0%, rgba(142, 51, 199, 0) 100%);
-    
     }
     
 
