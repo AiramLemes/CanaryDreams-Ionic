@@ -1,4 +1,4 @@
-header {
+ion-header {
 
     display: grid; 
     grid-auto-columns: 1fr; 
@@ -11,7 +11,6 @@ header {
     height: 45px;
     margin: auto;
     margin-bottom: 50px;
-    
     background: linear-gradient(180deg, #303535 83.85%, rgba(48, 53, 53, 0.85) 100%);
 }
 
