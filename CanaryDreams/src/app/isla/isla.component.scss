@@ -1,4 +1,4 @@
-body{
+.body{
     background: rgb(255, 255, 255);
     font-family: "Times New Roman", Times, serif;
     font-style: normal;
@@ -6,7 +6,7 @@ body{
     width: 900px;
     font-size: 24px;
     float: center;
-    padding-top: 20px;
+    padding-top: 120px;
     padding-bottom: 100px;
     
     color: #000000;
@@ -265,16 +265,16 @@ h1 {
 }
 
 @media screen and (max-width: 60em){
-    body{
+    .body{
         background: rgb(255, 255, 255);
         font-family: "Times New Roman", Times, serif;
         font-style: normal;
         text-align: justify;
         margin: 0 auto;
         font-size: 16px;
-        width: 640px;
+        width: 620px;
         float: center;
-        padding-top: 20px;
+        padding-top: 120px;
         padding-bottom: 60px;
         overflow: hidden;
         
@@ -461,7 +461,7 @@ h1 {
 }
 
 @media screen and (max-width: 40em){
-    body{
+    .body{
         background: rgb(255, 255, 255);
         font-family: "Times New Roman", Times, serif;
         font-style: normal;
@@ -469,7 +469,7 @@ h1 {
         
         font-size: 9.5px;
         float: center;
-        padding-top: 10px;
+        padding-top: 120px;
         padding-bottom: 35px;
 
         width: 320px;
@@ -614,7 +614,7 @@ h1 {
         width: 200px;
         height: 200px;
         margin-left: 50px;
-        margin-top: 60px;
+        margin-top: 100px;
     
         border: 1px solid #000000;
         box-sizing: border-box;
