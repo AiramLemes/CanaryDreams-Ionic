@@ -1,83 +1,83 @@
 <ion-content>
-<section>
+    <section>
 
-  <div id="CuadroBotonesLogReg">
-      <a href="/login" class="boton">Iniciar Sesión</a> 
-      <a href="/register" class="boton">Registrarse</a>
+    <div id="CuadroBotonesLogReg">
+        <a href="/login" class="boton">Iniciar Sesión</a> 
+        <a href="/register" class="boton">Registrarse</a>
 
-  </div>
+    </div>
 
-  
+    
 
-  <div>
-      <form class="FormularioRegistrarse" [formGroup]="registerForm" (ngSubmit)="onRegister()">
+    <div>
+        <form class="FormularioRegistrarse" [formGroup]="registerForm" (ngSubmit)="onRegister()">
 
-          <div id = IconoLogIn></div><div></div>
-          <div class="form-group">
-              <h2>Nombre</h2>
-              <input type="text" required class="camposRegistrarse" formControlName = "nombre">
+            <div id = IconoLogIn></div><div></div>
+            <div class="form-group">
+                <h2>Nombre</h2>
+                <input type="text" required class="camposRegistrarse" formControlName = "nombre">
 
-          </div>
+            </div>
 
-          <div class="form-group">
-              <h2>Apellidos:</h2>
-              <input type="text" required class="camposRegistrarse" formControlName = "apellidos">
-          </div>
-              
-          <div class="form-group">
-              <h2>Sexo</h2>
-              <select required class="camposRegistrarse" formControlName = "sexo">
-                  <option value="0" selected>Seleccione uno:</option>
-                  <option value="1">Femenino</option>
-                  <option value="2">Masculino</option>
-                  <option value="3">Indeterminado</option>
-              </select> 
-          </div>
+            <div class="form-group">
+                <h2>Apellidos:</h2>
+                <input type="text" required class="camposRegistrarse" formControlName = "apellidos">
+            </div>
+                
+            <div class="form-group">
+                <h2>Sexo</h2>
+                <select required class="camposRegistrarse" formControlName = "sexo">
+                    <option value="0" selected>Seleccione uno:</option>
+                    <option value="1">Femenino</option>
+                    <option value="2">Masculino</option>
+                    <option value="3">Indeterminado</option>
+                </select> 
+            </div>
 
-          <div class="form-group">
-              <h2>Fecha de Nacimiento:</h2>
-              <input type="date" formControlName = "fecha" required class="camposRegistrarse" max="2004-12-31">
-          </div>
-              
-          <div class="form-group">
-              <h2>Teléfono:</h2>
-              <input type="tel" formControlName = "telefono" required pattern="([0-9]{9})" title="Debe introducir un número de teléfono de 9 dígitos" class="camposRegistrarse">
-          </div>
-          
-          <div class="form-group">
-              <h2>DNI:</h2>
-              <input type="text" formControlName = "dni" required pattern="[0-9]{8}[A-Za-z]{1}" title="Debe introducir 8 números y una letra"  class="camposRegistrarse">
-          </div>
-          
-          <div class="form-group">
-              <h2>Correo Electrónico:</h2>
-              <input type="email" formControlName = "email" required class="camposRegistrarse">
-          </div>
+            <div class="form-group">
+                <h2>Fecha de Nacimiento:</h2>
+                <input type="date" formControlName = "fecha" required class="camposRegistrarse" max="2004-12-31">
+            </div>
+                
+            <div class="form-group">
+                <h2>Teléfono:</h2>
+                <input type="tel" formControlName = "telefono" required pattern="([0-9]{9})" title="Debe introducir un número de teléfono de 9 dígitos" class="camposRegistrarse">
+            </div>
+            
+            <div class="form-group">
+                <h2>DNI:</h2>
+                <input type="text" formControlName = "dni" required pattern="[0-9]{8}[A-Za-z]{1}" title="Debe introducir 8 números y una letra"  class="camposRegistrarse">
+            </div>
+            
+            <div class="form-group">
+                <h2>Correo Electrónico:</h2>
+                <input type="email" formControlName = "email" required class="camposRegistrarse">
+            </div>
 
-          <div>
-              <h2>Confirmar Correo Electrónico</h2>
-              <input type="email" required class="camposRegistrarse">
-          </div>
+            <div>
+                <h2>Confirmar Correo Electrónico</h2>
+                <input type="email" required class="camposRegistrarse">
+            </div>
 
-          <div class="form-group">
-              <h2>Contraseña:</h2>
-              <input type="password" formControlName = "password" title="La contraseña debete tener como mínimo una letra mayúscula, una letra minúscula, un caracter espcial o un número y al menos 8 caracteres"
-              required minlength="8" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" class="camposRegistrarse">
-          </div>
+            <div class="form-group">
+                <h2>Contraseña:</h2>
+                <input type="password" formControlName = "password" title="La contraseña debete tener como mínimo una letra mayúscula, una letra minúscula, un caracter espcial o un número y al menos 8 caracteres"
+                required minlength="8" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" class="camposRegistrarse">
+            </div>
 
-          <div>
-              <h2>Confirmar Contraseña:</h2>
-              <input type="password" required class="camposRegistrarse">
-          </div>
+            <div>
+                <h2>Confirmar Contraseña:</h2>
+                <input type="password" required class="camposRegistrarse">
+            </div>
 
-          <input id = "botonRegistrarse" type="submit" value = "Registrarse">
-          
+            <input id = "botonRegistrarse" type="submit" value = "Registrarse">
+            
 
-      </form>
-      
-      
+        </form>
+        
+        
 
-  </div>
+    </div>
 
-</section>
+    </section>
 </ion-content>

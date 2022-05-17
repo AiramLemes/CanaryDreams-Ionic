@@ -1,23 +1,10 @@
-.error {
-    display: none; color: red; font-weight: bold;
-}
-
-
-
- .teal {border:5px dotted teal;background-color:#eafafb;}
-
-
-
-.submitted :invalid + .error { display: block; }
-.submitted :invalid { border: 1px solid red; }
-
 
 section {
 
-    width: 1000px;
+    max-width: 1000px;
     
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 0.6fr 1fr; 
     grid-template-rows: 1fr; 
     grid-template-areas: "."; 
     margin: auto;
@@ -64,8 +51,7 @@ form.FormularioRegistrarse {
     grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr 1.5fr; 
     grid-template-areas: 
     "." "." "." "." "." "."; 
-    margin: 0 auto;
-    margin-left: 20%;
+    margin: auto;
     margin-top: auto;
 
 }
@@ -73,8 +59,9 @@ form.FormularioRegistrarse {
 
 .FormularioRegistrarse {
 
-    width: 631px;
+    width: 600px;
     height: 650px;
+    margin: auto;
     background: #F4E4E4;
     border-radius: 32px;
     
