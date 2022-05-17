@@ -35,14 +35,14 @@ export class HeaderComponent implements OnInit {
 
   }
 
-  mostrarAnfitrion() { // Persfecto niño
+  mostrarAnfitrion() {
       this.authService.afAuth.onAuthStateChanged((user) => {
-    if (user) {
-      this.anfitrionButton.style.display = "block";
-    } else {
-              this.anfitrionButton.style.display = "none";
-    }
-    });
+      if (user) {
+        this.anfitrionButton.style.display = "block";
+      } else {
+                this.anfitrionButton.style.display = "none";
+      }
+      });
   }
   
 
