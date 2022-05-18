@@ -13,35 +13,32 @@ export class MisReservasComponent implements OnInit {
 
   constructor(private alojamientos: AlojamientosService, private path: Router, private user: AuthService, private almacenamiento: StorageService) { }
 
-  misReservas: Alojamiento[] = []
+  misReservas: Alojamiento[] = [];
 
   async ngOnInit(): Promise<any> {
 
-      this.misReservas = await this.alojamientos.getMisAlojamientos(this.user.getUid());
+      this.misReservas = await this.alojamientos.getMisReservas(this.user.getUid());
+      console.log(this.misReservas)
   }
 
-  eliminar(id: string) {
-      console.log(id)
-      let confirmacion = confirm("¿Está seguro de que quiere eliminar su alojamiento?");
+    eliminar(id: string) {
+        
+        let confirmacion = confirm("¿Está seguro de que quiere cancelar esta reserva?");
+        
+        if (confirmacion) {
+            this.alojamientos.eliminarReserva(id, this.user.getUid())
+            alert("Su reserva ha sido cancelada correctamente");
+            this.path.navigateByUrl("")
+        }
 
-      if (confirmacion) {
+        else {
+            alert("Se ha producido un error, vuelva a intentarlo")
+        }
 
-          if (confirmacion) {
-              this.alojamientos.eliminarAlojamiento(id, this.user.getUid())
-              this.almacenamiento.eliminarAlojamiento(id);
-              alert("Su alojamiento ha sido eliminado correctamente");
-              this.path.navigateByUrl("")
-          }
 
-          else {
-              alert("Se ha producido un error, vuelva a intentarlo")
-          }
-          
-
-      }
-  }
-
+    }
 }
+
 
 type Alojamiento = {
   imagenes:{imagen: string},

@@ -51,15 +51,18 @@ export class AuthService {
 	async register (email:string, password:string, nombre:string, apellidos:string,
 		 sexo:string, fecha:string, telefono: string, dni: string) {
 		
-		
+			var fotoPerfil = "https://firebasestorage.googleapis.com/v0/b/canary-dreams-db.appspot.com/o/usuarios%2FGen%C3%A9rico%2FfotoPefilGenerica.png?alt=media&token=406f2467-9b4e-4b2c-a9c7-9001ba9c00d3"
 
 		await this.afAuth.createUserWithEmailAndPassword(email, password)
+		
 		.then(async (userCredential) => {
 			console.log(nombre, apellidos, sexo, fecha, telefono, dni)
+
 			await this.db.collection('usuarios').
 			doc(userCredential.user?.uid).
 			set({nombre: nombre, apellidos: apellidos, sexo: sexo, 
-			fechaDeNacimiento: fecha, telefono: telefono, dni: dni, correo: email}).then( (err) => console.log(err));
+			fechaDeNacimiento: fecha, telefono: telefono, dni: dni, 
+			correo: email, fotoPerfil: fotoPerfil}).then( (err) => console.log(err));
 			alert('Se ha registrado correctamente');
 			window.location.assign("/")
 		});
