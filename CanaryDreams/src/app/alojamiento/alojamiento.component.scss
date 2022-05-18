@@ -594,7 +594,6 @@ iframe {
         width:320px;
         overflow: hidden;
         margin: 0 auto;
-        height: 1560px;
         
     }
 
@@ -613,7 +612,6 @@ iframe {
           "valoraciones";
 
         width: 300px;
-        height: 1000px;
 
     }
     
@@ -623,8 +621,9 @@ iframe {
         font-weight: 400;
         font-size: 20px;
         margin: auto;
-        margin-top: -10px;
-        margin-left: 210px;
+        text-align: center;
+        margin-top: 60px;
+
 
     }
       
@@ -639,7 +638,7 @@ iframe {
           "fotos";
         grid-area: titulo_fotos;
         margin-top: 10px;
-        margin-left: -179px;
+        margin-left: -160px;
         width: 200px;
         
     }
@@ -668,13 +667,11 @@ iframe {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 0px 0px;
-        grid-auto-flow: row;
         grid-template-areas:
           ". ."
           ". .";
         grid-area: f2;
         margin: auto;
-        width: max-content;
 
     }
       
@@ -683,11 +680,9 @@ iframe {
     
         width: 100px;
         height: 80px;
-        margin: 0 auto;
-        margin-top: 20px;
-        margin-left: 5px;
-    
-    
+        margin: auto;
+        margin-right: 10px;    
+        margin-bottom: 10px;
     }
     
     .fotoGrande {
@@ -696,6 +691,7 @@ iframe {
         height: 170px;
         margin: 0 auto;
         margin-right: 10px;
+        
         
     }
     
@@ -720,6 +716,8 @@ iframe {
         grid-template-areas: 
             ". ."; 
         grid-area: d2; 
+        margin: auto;
+        margin-top: 20px;
     }
 
     
@@ -846,8 +844,10 @@ iframe {
     }
     
     .mapa { 
-        margin: 0 auto;
+        margin: auto;
         width: 230px;
+        height: max-content;
+        margin-bottom: 50px;
         
     }
     
@@ -858,8 +858,7 @@ iframe {
         border: 1px solid black;
         border-radius: 20px;
         margin: 0 auto;
-        margin-top: 160px;
-
+        margin-top: 10px;
         
     }
     
