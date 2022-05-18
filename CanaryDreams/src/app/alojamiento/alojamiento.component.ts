@@ -32,9 +32,17 @@ export class AlojamientoComponent implements OnInit {
 
     crearReserva():void {
         
-        this.alojamientoService.crearReserva(this.id, this.user.getUid())
-        alert("La reserva se ha realizado correctamente")
-        this.path.navigateByUrl("/")
+        if (this.user.currentUser()) {
+            this.alojamientoService.crearReserva(this.id, this.user.getUid())
+            alert("La reserva se ha realizado correctamente")
+            this.path.navigateByUrl("/")
+        }
+
+        else {
+            alert("Para realizar una reserva, es necesario iniciar sesión!")
+        }
+
+       
     }
 
 
