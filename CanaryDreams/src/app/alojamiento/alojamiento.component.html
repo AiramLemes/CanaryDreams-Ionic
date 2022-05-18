@@ -1,23 +1,20 @@
-
-
-
-  <ion-content class="container">
-asdadsasd
+    <ion-content>
+        <section class = container>
         <section class="titulo_fotos">
 
-            <h1 id = titulo>{{alojamiento.informacionGeneral.titulo}}</h1>    
+            <h1 id = titulo>{{alojamiento?.informacionGeneral.titulo}}</h1>    
 
             <div class = fotos>
 
                 <div class="f1">
-                    <img class= "fotoGrande" src="{{alojamiento.imagenes.imagen}}">
+                    <img class= "fotoGrande" src="{{alojamiento?.imagenes.imagen}}">
                 </div>
 
                 <div class="f2">
-                    <img class= "fotoPequeña" src="{{alojamiento.imagenes.imagen2}}">
-                    <img class= "fotoPequeña" src="{{alojamiento.imagenes.imagen3}}">
-                    <img class= "fotoPequeña" src="{{alojamiento.imagenes.imagen4}}">
-                    <img class= "fotoPequeña" src="{{alojamiento.imagenes.imagen5}}">
+                    <img class= "fotoPequeña" src="{{alojamiento?.imagenes.imagen2}}">
+                    <img class= "fotoPequeña" src="{{alojamiento?.imagenes.imagen3}}">
+                    <img class= "fotoPequeña" src="{{alojamiento?.imagenes.imagen4}}">
+                    <img class= "fotoPequeña" src="{{alojamiento?.imagenes.imagen5}}">
                 </div>
 
             </div>
@@ -29,11 +26,11 @@ asdadsasd
 
 
             <div>
-                <p class="direc_text_titulo">TIPO: {{alojamiento.tipo}}<br><br></p>
-                <p id="resumen">{{alojamiento.espacios.huespedes}} huésped/es · {{alojamiento.espacios.dormitorios}} 
-                    dormitorio/s · {{alojamiento.espacios.camas}} cama/s · {{alojamiento.espacios.bathroom}} baño/s</p>
+                <p class="direc_text_titulo">TIPO: {{alojamiento?.tipo}}<br><br></p>
+                <p id="resumen">{{alojamiento?.espacios.huespedes}} huésped/es · {{alojamiento?.espacios.dormitorios}} 
+                    dormitorio/s · {{alojamiento?.espacios.camas}} cama/s · {{alojamiento?.espacios.bathroom}} baño/s</p>
                 <p class="direc_text_titulo">El espacio</p>
-                <p class="direc_text_cont">{{alojamiento.informacionGeneral.descripcion}}</p>
+                <p class="direc_text_cont">{{alojamiento?.informacionGeneral.descripcion}}</p>
                 <p class="direc_text_titulo">Otros aspectos destacables</p>
                 <p class="direc_text_cont">Para unas vacaciones 100% memorables, asegúrate de conectar tu Body & 
                     Soul con experiencias activas como yoga, kitesurf, surf, paseos en barco o disfrutando de una 
@@ -87,5 +84,6 @@ asdadsasd
 
             </iframe>
         </section>
+    </section>
 
   </ion-content>
