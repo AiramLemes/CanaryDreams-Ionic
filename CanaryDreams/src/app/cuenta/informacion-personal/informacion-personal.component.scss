@@ -29,6 +29,7 @@
       "imagen"
       "personalData";
     grid-area: data;
+    margin-bottom: 50px;
 }
   
 .imagen { 
@@ -239,9 +240,8 @@ label {
         margin: auto;
         width: 100px;
         height: 100px;
-        margin-top: 50px;
         margin-left: 4px;
-        margin-top: 30px;
+        margin-top: 0px;
     }
     
     
@@ -289,6 +289,7 @@ label {
         width: 600px;
         margin-top: -200px;
         margin-left: -315px;
+        margin-bottom: 50px;
         font-size: 14px;
     }
     
@@ -300,8 +301,7 @@ label {
         border-radius: 15px;
         background-color: #69C3FE;
         cursor: pointer;
-        margin-left: -87px;
-        margin-top: 20px;
+        margin-left: -95px;
         font-size:10px;
         margin-bottom: 60px;
     

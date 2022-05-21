@@ -81,7 +81,7 @@ export class RegisterComponent implements OnInit {
             }
 
 
-            if (password.value === password2.value) {
+            if (password.value == password2.value) {
                 validate = true;
                 password2.style.border = "2px solid";
             } 

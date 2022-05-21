@@ -86,6 +86,25 @@ export class AlojamientosService {
         return alojamientos
     }
 
+    async getMisReservas(uid: string) {
+        const misReservas: any = [];
+
+        await this.db.collection("usuarios").doc(uid).get().subscribe((e) => {
+            
+            e.get("reservas").forEach((element: any) => {
+                
+                var parts = element.split("/");
+                this.db.collection(parts[0]).doc(parts[1]).valueChanges({idField: 'id'}).subscribe((alojamiento) => {
+                    misReservas.push(alojamiento)
+                })
+
+            });
+
+        })
+
+        return misReservas
+    }
+
 
 
 
@@ -102,5 +121,27 @@ export class AlojamientosService {
         })
         
     }
+
+    eliminarReserva(id: string, userId: string) {
+        
+        var ref = "alojamientos/" + id
+    
+        this.db.collection("usuarios").doc(userId).update({
+            reservas: arrayRemove(ref)
+        })
+        
+    }
+
+
+
+    async crearReserva(id: string, userId: string) {
+
+        var ref = "alojamientos/" + id
+    
+        this.db.collection("usuarios").doc(userId).update({
+            reservas: arrayUnion(ref)
+        })
+    }
+    
 
 }
