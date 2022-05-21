@@ -231,6 +231,7 @@ label {
           "imagen"
           "personalData";
         grid-area: data;
+        height: 960px;
     }
       
     .imagen { 
@@ -286,7 +287,7 @@ label {
         grid-area: personalData;
         margin: 0 auto;
         width: 600px;
-        margin-top: -190px;
+        margin-top: -200px;
         margin-left: -315px;
         font-size: 14px;
     }
@@ -302,7 +303,7 @@ label {
         margin-left: -87px;
         margin-top: 20px;
         font-size:10px;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
     
     }
 }
